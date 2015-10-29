@@ -54,14 +54,55 @@ public class Movement : MonoBehaviour {
 	
 	void FixedUpdate () {
 		//Keyboard Movements
-		Jump ();
+		if (grounded && Input.GetKey (KeyCode.Space)) {
+			Jump ();
+		}
+
 		PlayerMovement ();
 		
 		//phone movement and attack
-		SwipeMovement ();
-		//Attack ();
+		//SwipeMovement ();
+
+		if(Input.GetKeyDown(KeyCode.F)) 
+		{
+			Attack ();
+		}
+
 	}
-	
+
+	public void LeftArrow()
+	{
+		Move (-1);
+	}
+
+	public void RightArrow()
+	{
+		Move (1);
+	}
+
+	public void UnpressedArrow()
+	{
+		Move (0);
+	}
+
+	public void TouchJump()
+	{
+		Jump ();
+	}
+
+	public void TouchShoot()
+	{
+		Attack ();
+	}
+
+	public void Move(int moveInput)
+	{
+		moveVelocity = speed * moveInput;
+	}
+
+
+
+	/*
 	//this controls all the swipes
 	void SwipeMovement () {
 		if (Input.touchCount > 0) 	
@@ -110,12 +151,12 @@ public class Movement : MonoBehaviour {
 			}
 		}
 	}
+
+*/
 	
 	//tap to attack
-	void Attack (){
-		if(Input.GetKeyDown (KeyCode.Mouse0)) {
+	public void Attack (){
 			Instantiate (bullet, shootingPoint.position, shootingPoint.rotation);
-		}
 	}
 	
 	//keyboard or controller movement
@@ -125,11 +166,8 @@ public class Movement : MonoBehaviour {
 	}
 	
 	//keyboard jumping
-	void Jump () {
-		
-		if (grounded && Input.GetKey (KeyCode.Space)) {
+	public void Jump () {
 			rb.velocity = transform.TransformDirection (new Vector3 (0, jumpForce, 0));
-		}
 	}
 	
 	//ground detection
