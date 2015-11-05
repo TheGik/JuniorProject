@@ -34,7 +34,7 @@ public class Attractor : MonoBehaviour {
 	
 	
 	
-	void OnTriggerStay (Collider col){
+	void OnTriggerEnter (Collider col){
 		col.transform.parent = gameObject.transform;
 	}
 	

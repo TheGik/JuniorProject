@@ -6,13 +6,14 @@ public class touchControls : MonoBehaviour {
 
 	private Movement playerMove;
 
-	void start () {
+	void Start () {
 		playerMove = FindObjectOfType<Movement> ();
 	}
 
 	public void LeftArrow()
 	{
 		playerMove.Move (-1);
+		print ("Left Arrow Down");
 	}
 	
 	public void RightArrow()

@@ -9,7 +9,7 @@ public class Movement : MonoBehaviour {
 	public int speed = 5;
 	public int jumpForce = 10;
 	public int moveVelocity = 10;
-	public int maxSpeed = 80;
+	public int maxSpeed = 20;
 	
 	//jumping variables
 	public bool grounded;
@@ -171,13 +171,20 @@ public class Movement : MonoBehaviour {
 	}
 	
 	//ground detection
-	void OnCollisionStay (Collision collider){
-		if (collider.gameObject.layer == 8)
+	void OnCollisionEnter (Collision collider){
+		// Layer 8 is the ground Layer
+		if (collider.gameObject.layer == 8) {
 			grounded = true;
+			transform.parent = collider.gameObject.transform.parent;
+		}
 	}
 	void OnCollisionExit (Collision collider){
-		if (collider.gameObject.layer == 8)
+		// Layer 8 is the ground Layer
+		if (collider.gameObject.layer == 8) {
 			grounded = false;
+
+
+		}
 	}
 
 	void OnTriggerEnter (Collider other) {

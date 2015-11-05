@@ -1,44 +1,50 @@
-﻿using UnityEngine;
+﻿// Author: Miles Meacham
+// Description: Generates a planet with the desired amount of rings
+
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+// Planet Generation
+// Generates a planet with the desired amount of rings
 public class planetGeneration : MonoBehaviour {
 
-	GameObject[] planets;
-	
-	public int numWorlds = 3;
-	int index;
+	// Select how many rings (Currently it can't be more than 3 because we have not created rings of that size)
+	public int ringAmount = 3;
+
+	// These variables deal with the rotation and placement of the shards
 	int rotationDegree;
 	int rotationValue = 0;
 	int sectionsPerWorld = 4;
-	int minPlanets = 4;
-	int maxPlanets = 9;
+
+	// These variables deal with the different sizes of shards
+	// These will be changing soon (If not just removed). They will all be 4
 	int lrgPlanetSections = 8;
 	int medPlanetSections = 6;
 	int smlPlanetSections = 4;
-	
-	int ringAmount = 1;
-	
+
+	// This gets populated with the current sections being placed
 	public List<GameObject> sections = new List<GameObject>();
-	
+
+	// These Lists are used to procedurally choose the shards for the rings
+	// Add the shards in the Inspector
 	public List<GameObject> smlSections = new List<GameObject>();
 	public List<GameObject> medSections = new List<GameObject>();
 	public List<GameObject> lrgSections = new List<GameObject>();
 
 
-	// Use this for initialization
+	// Purpose: Generates the Planet
+	// Parameters: Void
+	// Returns: None
+	// Pre-conditions: Just make sure that you have populated the lists in the inspector
+	// Post-conditions:
+	// -----------------------------------------------------------------
 	void Awake () {
 
 		int planetSize = 1;
 
 		// Start Generating Worlds
-		for(int i = 0; i < numWorlds; i++){
-			
-			// Choose a random planet size
-			int randRingAmount = Random.Range (1, 3);
-			ringAmount = randRingAmount;
-
-
+		for(int i = 0; i < ringAmount; i++){
 
 			// Assign the Shards to the list "sections"
 			if(planetSize == 1){
@@ -85,13 +91,16 @@ public class planetGeneration : MonoBehaviour {
 
 				// Assign the proper components to the planet
 				planet.AddComponent<Attractor> ();
-				/* Don't need these unless we want to switch gravity
-				planet.AddComponent<SphereCollider> ();
-				planet.GetComponent<SphereCollider>().isTrigger = true;
-				planet.GetComponent<SphereCollider>().transform.localScale = new Vector3 (30, 30, 5);
-				*/
+
+				// Name this one "Core" *It should only happen once
 				planet.name = "Core";
 			}
+
+			// Add left or right rotates to each ring
+			if(i % 2 == 1)
+				planet.AddComponent<RotateLeft>();
+			else
+				planet.AddComponent<RotateRight>();
 			
 			// Randomly choose shards from the list of shards
 			for(int n = 0; n < sectionsPerWorld; n++){
