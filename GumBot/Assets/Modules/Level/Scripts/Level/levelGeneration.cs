@@ -102,6 +102,9 @@ public class levelGeneration : MonoBehaviour {
 				planet.name = "Planet";
 			}
 
+
+
+
 			// Randomly choose shards from the list of shards
 			for(int n = 0; n < sectionsPerWorld; n++){
 				
