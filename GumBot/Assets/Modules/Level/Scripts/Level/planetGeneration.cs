@@ -19,8 +19,8 @@ public class planetGeneration : MonoBehaviour {
 
 	// These variables deal with the different sizes of shards
 	// These will be changing soon (If not just removed). They will all be 4
-	int lrgPlanetSections = 8;
-	int medPlanetSections = 6;
+	int lrgPlanetSections = 4;
+	int medPlanetSections = 4;
 	int smlPlanetSections = 4;
 
 	// This gets populated with the current sections being placed

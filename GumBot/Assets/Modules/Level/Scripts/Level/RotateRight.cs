@@ -12,6 +12,6 @@ public class RotateRight : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate(new Vector3 (GetComponent<Transform>().rotation.x, GetComponent<Transform>().rotation.y, GetComponent<Transform>().rotation.z + rotationSpeed) * Time.deltaTime);
+		transform.Rotate(new Vector3 (0, 0, GetComponent<Transform>().rotation.z + rotationSpeed) * Time.deltaTime);
 	}
 }
