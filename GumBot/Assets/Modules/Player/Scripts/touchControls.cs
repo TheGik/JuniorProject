@@ -1,38 +1,65 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class touchControls : MonoBehaviour {
+public class TouchControls : MonoBehaviour {
 
+	private CharacterMotor theCharacterMotor;
+	private CharacterJump theCharacterJump;
 
-	private Movement playerMove;
+	private bool movingLeft = false;
+	private bool movingRight = false;
 
-	void Start () {
-		playerMove = FindObjectOfType<Movement> ();
+	void Start () 
+	{
+		theCharacterMotor = gameObject.GetComponent<CharacterMotor> ();
+		theCharacterJump = gameObject.GetComponent<CharacterJump> ();
+	}
+
+	void Update ()
+	{
+		if (movingLeft == true)
+			theCharacterMotor.HorizontalVelocity ();
+
+		if (movingRight)
+			theCharacterMotor.HorizontalVelocity ();
+
 	}
 
 	public void LeftArrow()
 	{
-		playerMove.Move (-1);
-		print ("Left Arrow Down");
+		movingLeft = true;
+
+		if (theCharacterMotor.facingRight)
+			theCharacterMotor.Flip();
+		
+
 	}
 	
 	public void RightArrow()
 	{
-		playerMove.Move (1);
+		movingRight = true;
+
+		if (!theCharacterMotor.facingRight)
+			theCharacterMotor.Flip ();
+
+
 	}
-	
+
 	public void UnpressedArrow()
 	{
-		playerMove.Move (0);
+		movingLeft = false;
+		movingRight = false;
+
 	}
 	
 	public void TouchJump()
 	{
-		playerMove.Jump ();
+		theCharacterJump.Jump ();
 	}
-	
+/*	
 	public void TouchShoot()
 	{
-		playerMove.Attack ();
+		theCharacterMotor.Attack ();
 	}
+*/
 }
