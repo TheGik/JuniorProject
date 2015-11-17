@@ -18,7 +18,7 @@ public class CharacterGravity : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		attractor.Attract (myTransform);
 	}
 	
