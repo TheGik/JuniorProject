@@ -150,8 +150,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170370}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .800000012, z: 0}
-  m_LocalScale: {x: 1.20000005, y: 1, z: 1}
+  m_LocalPosition: {x: .159999996, y: .699999988, z: 0}
+  m_LocalScale: {x: .899999976, y: 1.02997446, z: 1}
   m_Children: []
   m_Father: {fileID: 418034}
   m_RootOrder: 0
@@ -162,8 +162,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 105570}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.400000006, z: 0}
-  m_LocalScale: {x: 1.20000005, y: .699999988, z: 1}
+  m_LocalPosition: {x: .159999996, y: -.400000006, z: 0}
+  m_LocalScale: {x: .899999976, y: .699999988, z: 1}
   m_Children: []
   m_Father: {fileID: 418034}
   m_RootOrder: 1
@@ -254,7 +254,7 @@ Camera:
   m_GameObject: {fileID: 199042}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -526,7 +526,7 @@ MonoBehaviour:
   maxSpeed: 20
   characterMovement: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
-  jumpForce: 15
+  jumpForce: 10
   facingRight: 1
 --- !u!114 &11499784
 MonoBehaviour:

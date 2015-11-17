@@ -46,7 +46,7 @@ public class CharacterAutoCrouch : MonoBehaviour {
 			theCharacterMotor.transform.localScale = new Vector3 (theCharacterMotor.transform.localScale.x, theCharacterMotor.transform.localScale.y / 2, theCharacterMotor.transform.localScale.z);
 
 			// adjust the colliders because the shrink when the character crouches
-			theCharacterAutoCrouchTop.transform.localPosition = new Vector3 (theCharacterAutoCrouchTop.transform.localPosition.x, theCharacterAutoCrouchTop.transform.localPosition.y * 2, theCharacterAutoCrouchTop.transform.localPosition.z);
+			theCharacterAutoCrouchTop.transform.localPosition = new Vector3 (theCharacterAutoCrouchTop.transform.localPosition.x, theCharacterAutoCrouchTop.transform.localPosition.y * 3, theCharacterAutoCrouchTop.transform.localPosition.z);
 			theCharacterAutoCrouchTop.transform.localScale = new Vector3 (theCharacterAutoCrouchTop.transform.localScale.x, theCharacterAutoCrouchTop.transform.localScale.y * 2, theCharacterAutoCrouchTop.transform.localScale.z);
 
 		}
@@ -60,7 +60,7 @@ public class CharacterAutoCrouch : MonoBehaviour {
 			theCharacterMotor.transform.localScale = new Vector3 (theCharacterMotor.transform.localScale.x, theCharacterMotor.transform.localScale.y * 2, theCharacterMotor.transform.localScale.z);
 
 			// set the size and position of the colliders back to normal.
-			theCharacterAutoCrouchTop.transform.localPosition = new Vector3 (theCharacterAutoCrouchTop.transform.localPosition.x, theCharacterAutoCrouchTop.transform.localPosition.y / 2, theCharacterAutoCrouchTop.transform.localPosition.z);
+			theCharacterAutoCrouchTop.transform.localPosition = new Vector3 (theCharacterAutoCrouchTop.transform.localPosition.x, theCharacterAutoCrouchTop.transform.localPosition.y / 3, theCharacterAutoCrouchTop.transform.localPosition.z);
 			theCharacterAutoCrouchTop.transform.localScale = new Vector3 (theCharacterAutoCrouchTop.transform.localScale.x, theCharacterAutoCrouchTop.transform.localScale.y / 2, theCharacterAutoCrouchTop.transform.localScale.z);
 
 		}
