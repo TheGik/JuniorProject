@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3347006}
   - 23: {fileID: 2337756}
   - 95: {fileID: 9532068}
-  - 64: {fileID: 6402292}
+  - 64: {fileID: 6480390}
   m_Layer: 8
   m_Name: skyLevel02
   m_TagString: Untagged
@@ -62,7 +62,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174840}
   m_Mesh: {fileID: 4300000, guid: 0717336cf95e3c74abde0746fdc382c5, type: 3}
---- !u!64 &6402292
+--- !u!64 &6480390
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
