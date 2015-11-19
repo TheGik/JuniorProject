@@ -44,6 +44,7 @@ public class CharacterMotor2 : MonoBehaviour {
 			if(facingRight == true)
 			{
 				Flip ();
+				facingRight = false;
 			}
 
 			characterMovement = new Vector3 (speed, 0, 0);
@@ -56,6 +57,7 @@ public class CharacterMotor2 : MonoBehaviour {
 			if(facingRight == false)
 			{
 				Flip ();
+				facingRight = true;
 			}
 			
 			characterMovement = new Vector3 (speed, 0, 0);

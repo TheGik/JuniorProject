@@ -26,6 +26,7 @@ public class TouchInputs : MonoBehaviour {
 	public GameObject objPlayer;
 	private CharacterMotor2 characterMotorScript;
 	private CharacterJump2 characterJumpScript;
+	private CharacterShot characterShotScript;
 
 	// Use this for initialization
 	void Start () 
@@ -33,6 +34,7 @@ public class TouchInputs : MonoBehaviour {
 		Input.multiTouchEnabled = true;
 		characterMotorScript = objPlayer.GetComponent<CharacterMotor2>();
 		characterJumpScript = objPlayer.GetComponent<CharacterJump2>();
+		characterShotScript = objPlayer.GetComponent<CharacterShot>();
 	}
 	
 	// Update is called once per frame
@@ -135,6 +137,12 @@ public class TouchInputs : MonoBehaviour {
 
 
 						}
+
+						
+						if(isSwiping && gestureTime < maxSwipeTime && gestureDist < minSwipeDist)
+					{
+						characterShotScript.shot();
+					}
 						break;
 
 						//TOUCH STAY

@@ -4,14 +4,14 @@ using System.Collections;
 public class bulletMovement : MonoBehaviour {
     public float shotVelocity;
     public Rigidbody rb;
-    public CharacterMotor cm;
+    public CharacterMotor2 cm;
     public GameObject TheDude;
     public float lifeDuration;
 
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
-        cm = FindObjectOfType<CharacterMotor>();
+        cm = FindObjectOfType<CharacterMotor2>();
         if (cm.facingRight == true)
         {
             rb.velocity = transform.TransformDirection (new Vector3(shotVelocity, 0, 0));
