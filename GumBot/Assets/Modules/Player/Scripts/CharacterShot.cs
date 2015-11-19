@@ -15,12 +15,14 @@ public class CharacterShot : MonoBehaviour {
 	
 	// Update is called once per frame
     void Update () {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            Instantiate(bullet, shootingPoint.position, shootingPoint.rotation);
+    
+    }
 
-        
-        }
+    public void shot()
 
-        }
+    {
+        Instantiate(bullet, shootingPoint.position, shootingPoint.rotation);
+
+
+    }
 }
