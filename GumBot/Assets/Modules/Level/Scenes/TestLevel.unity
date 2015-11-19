@@ -167,10 +167,10 @@ MonoBehaviour:
   - {fileID: 182788, guid: 3408d7e8c41673a4782eec60999b3b5f, type: 2}
   - {fileID: 113422, guid: c59f225a0fcec3d4e8619ad1a731d032, type: 2}
   lrgSections:
+  - {fileID: 165214, guid: f5187e81aad444e4b887ea51c0dbc8f4, type: 2}
   - {fileID: 171838, guid: 9c85c177f2a672343bbf7c3a7bb1a864, type: 2}
-  - {fileID: 171838, guid: 9c85c177f2a672343bbf7c3a7bb1a864, type: 2}
-  - {fileID: 171838, guid: 9c85c177f2a672343bbf7c3a7bb1a864, type: 2}
-  - {fileID: 171838, guid: 9c85c177f2a672343bbf7c3a7bb1a864, type: 2}
+  - {fileID: 174840, guid: 28c351b75e18184439688db00108ea4d, type: 2}
+  - {fileID: 169372, guid: 43ac454f4050a734bba4f97334e15f49, type: 2}
 --- !u!4 &512393314
 Transform:
   m_ObjectHideFlags: 0
