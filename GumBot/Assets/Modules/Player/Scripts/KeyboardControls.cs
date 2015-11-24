@@ -3,47 +3,50 @@ using System.Collections;
 
 public class KeyboardControls : MonoBehaviour {
 	
-	private CharacterMotor theCharacterMotor;
-	private CharacterJump theCharacterJump;
+	private CharacterMotor2 theCharacterMotor;
+	private CharacterJump2 theCharacterJump;
 
 	// Use this for initialization
 	void Start () 
 	{
-		theCharacterMotor = gameObject.GetComponent<CharacterMotor> ();
-		theCharacterJump = gameObject.GetComponent<CharacterJump> ();
+		theCharacterMotor = gameObject.GetComponent<CharacterMotor2> ();
+		theCharacterJump = gameObject.GetComponent<CharacterJump2> ();
 	}
 
 	void Update ()
 	{
-		if (Input.GetKeyDown (KeyCode.Space))
-			theCharacterJump.Jump ();
+        if (Input.GetKeyDown(KeyCode.Space))
+            theCharacterJump.Jump();
 
-	}
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            theCharacterMotor.RightActivation();
+        }
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            theCharacterMotor.LeftActivation();
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            theCharacterMotor.RightActivation();
+        }
+
+
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            theCharacterMotor.LeftActivation();
+        }
+    }
+
 
 	void FixedUpdate () 
 	{
 
-		if (Input.GetKey (KeyCode.D)) 
-		{
-
-			if (!theCharacterMotor.facingRight)
-				theCharacterMotor.Flip ();
-
-			theCharacterMotor.HorizontalVelocity ();
-		}
+	
 
 
-		if (Input.GetKey (KeyCode.A)) 
-		{
-			if (theCharacterMotor.facingRight)
-				theCharacterMotor.Flip();
 
-			theCharacterMotor.HorizontalVelocity ();
-		}
-
-
-		
-		
-	}
+    }
 	
 }

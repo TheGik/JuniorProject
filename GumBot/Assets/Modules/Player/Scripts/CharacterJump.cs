@@ -9,7 +9,7 @@ using System.Collections;
 
 public class CharacterJump : MonoBehaviour {
 
-	public CharacterMotor theCharacterMotor;
+	public CharacterMotor2 theCharacterMotor;
 	public GroundCheck theGroundCheck;
 	
 	//jumping variables
@@ -20,7 +20,7 @@ public class CharacterJump : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		theGroundCheck = GetComponentInChildren<GroundCheck> ();
-		theCharacterMotor = GetComponent<CharacterMotor> ();
+		theCharacterMotor = GetComponent<CharacterMotor2> ();
 
 	}
 	
