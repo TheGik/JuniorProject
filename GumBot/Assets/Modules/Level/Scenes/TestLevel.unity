@@ -94,11 +94,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 458084, guid: 004a0378d71a3d9468868220f24172ef, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.42000008
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 458084, guid: 004a0378d71a3d9468868220f24172ef, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 86.8099976
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 458084, guid: 004a0378d71a3d9468868220f24172ef, type: 2}
       propertyPath: m_LocalPosition.z
@@ -122,11 +122,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 458084, guid: 004a0378d71a3d9468868220f24172ef, type: 2}
       propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 162510, guid: 004a0378d71a3d9468868220f24172ef, type: 2}
-      propertyPath: m_Name
-      value: Player
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 004a0378d71a3d9468868220f24172ef, type: 2}
@@ -160,21 +156,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ringAmount: 3
   sections: []
-  smlSections:
-  - {fileID: 138452, guid: f0497f8de409c024c9ecee8bf933c954, type: 2}
-  - {fileID: 119992, guid: 61bbe269631d6fb4591734029567d95c, type: 2}
-  - {fileID: 167570, guid: 4a5f22c5dd338fb49b617df8262c3c34, type: 2}
-  - {fileID: 110882, guid: 1a105412752e45b45bb6210631b05895, type: 2}
-  medSections:
-  - {fileID: 166290, guid: d8a5533ac7f394698a6031a5541868a8, type: 2}
-  - {fileID: 173256, guid: 6f1ed4fb0ea1c45e8b5cf52b95cf8dac, type: 2}
-  - {fileID: 108990, guid: fcbb994dd63fb485e8c4d4f51157a92a, type: 2}
-  - {fileID: 137398, guid: 6563568f2ae004ab69245463cc788d9c, type: 2}
-  lrgSections:
-  - {fileID: 173806, guid: 0f1728e02f1634496afff42bfd824e8b, type: 2}
-  - {fileID: 164364, guid: d1930932300014960a6ed0508bac7bef, type: 2}
-  - {fileID: 199378, guid: 48800fb93603443ae884b6569c9d311f, type: 2}
-  - {fileID: 199378, guid: bda195599073347f5904de9e91ce243b, type: 2}
 --- !u!4 &512393314
 Transform:
   m_ObjectHideFlags: 0

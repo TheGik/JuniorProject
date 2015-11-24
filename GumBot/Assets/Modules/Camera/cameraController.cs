@@ -25,7 +25,7 @@ public class cameraController : MonoBehaviour {
 
 	}
 
-	void Update ()
+	void FixedUpdate ()
 	{
 		if (isPaused == false)
 		{
@@ -52,6 +52,8 @@ public class cameraController : MonoBehaviour {
 				isPaused = false;
 			}
 		}
+
+		gameObject.transform.rotation = target.transform.rotation;
 	}
 	
 

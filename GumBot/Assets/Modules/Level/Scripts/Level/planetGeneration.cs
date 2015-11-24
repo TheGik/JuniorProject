@@ -28,9 +28,12 @@ public class planetGeneration : MonoBehaviour {
 
 	// These Lists are used to procedurally choose the shards for the rings
 	// Add the shards in the Inspector
-	public List<GameObject> smlSections = new List<GameObject>();
-	public List<GameObject> medSections = new List<GameObject>();
-	public List<GameObject> lrgSections = new List<GameObject>();
+
+	private List<GameObject> smlSections = new List<GameObject>();
+	private List<GameObject> medSections = new List<GameObject>();
+	private List<GameObject> lrgSections = new List<GameObject>();
+
+	private int sectionToAdd;
 
 
 	// Purpose: Generates the Planet
@@ -41,29 +44,59 @@ public class planetGeneration : MonoBehaviour {
 	// -----------------------------------------------------------------
 	void Awake () {
 
+		Object[] sectionsArray = Resources.LoadAll("Shards/SmlShards",typeof(GameObject));
+
+		foreach(var obj in sectionsArray)
+			smlSections.Add (obj as GameObject);
+
+		Object[] sectionsArray2 = Resources.LoadAll("Shards/MedShards",typeof(GameObject));
+
+		foreach(var obj in sectionsArray2)
+			medSections.Add (obj as GameObject);
+
+
+		Object[] sectionsArray3 = Resources.LoadAll("Shards/LrgShards",typeof(GameObject));
+		
+		foreach(var obj in sectionsArray3)
+			lrgSections.Add (obj as GameObject);
+
+
+
 		int planetSize = 1;
 
 		// Start Generating Worlds
-		for(int i = 0; i < ringAmount; i++){
+		for(int i = 0; i < ringAmount; i++)
+		{
 
 			// Assign the Shards to the list "sections"
 			if(planetSize == 1){
 				sectionsPerWorld = smlPlanetSections;
 				
-				for (int y = 0; y < sectionsPerWorld; y++){
-					sections.Add(smlSections[y]);
+				for (int y = 0; y < sectionsPerWorld; y++)
+				{
+					int sectionToAdd = Random.Range (0, smlSections.Count);
+					sections.Add(smlSections[sectionToAdd]);
+					smlSections.RemoveAt(sectionToAdd);
 				}
-			} else if (planetSize == 2){
+			} 
+			else if (planetSize == 2)
+			{
 				sectionsPerWorld = medPlanetSections;
 				
-				for (int y = 0; y < sectionsPerWorld; y++){
-					sections.Add(medSections[y]);
+				for (int y = 0; y < sectionsPerWorld; y++)
+				{
+					int sectionToAdd = Random.Range (0, medSections.Count);
+					sections.Add(medSections[sectionToAdd]);
+					medSections.RemoveAt(sectionToAdd);
 				}
 			} else {
 				sectionsPerWorld = lrgPlanetSections;
 				
-				for (int y = 0; y < sectionsPerWorld; y++){
-					sections.Add(lrgSections[y]);
+				for (int y = 0; y < sectionsPerWorld; y++)
+				{
+					int sectionToAdd = Random.Range (0, lrgSections.Count);
+					sections.Add(lrgSections[sectionToAdd]);
+					lrgSections.RemoveAt(sectionToAdd);
 				}
 			}
 			
@@ -106,7 +139,7 @@ public class planetGeneration : MonoBehaviour {
 			for(int n = 0; n < sectionsPerWorld; n++){
 				
 				int rand = Random.Range (0, sections.Count);
-				GameObject value = sections[rand];
+				//GameObject value = sections[rand];
 				
 				// Place shard
 				GameObject obj = Instantiate (sections[rand], new Vector3(planet.transform.position.x, planet.transform.position.y, (planet.transform.position.z - 1)), Quaternion.Euler(planet.transform.rotation.x, planet.transform.rotation.y, planet.transform.rotation.z + rotationValue)) as GameObject;
