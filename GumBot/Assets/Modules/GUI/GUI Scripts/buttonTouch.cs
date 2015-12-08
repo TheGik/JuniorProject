@@ -10,6 +10,7 @@ public class buttonTouch : MonoBehaviour {
 
 	void Start(){
 		mat = GetComponent<Renderer>().material;
+		mat.color = defaultColor;
 	}
 
 	void OnTouchDown(){
