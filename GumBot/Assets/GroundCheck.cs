@@ -28,7 +28,7 @@ public class GroundCheck : MonoBehaviour {
 		if (collider.gameObject.layer == 8) 
 		{
 			grounded = true;
-			theCharacterJump.doubleJumped = false;
+//			theCharacterJump.doubleJumped = false;
 		}
 		
 	}
