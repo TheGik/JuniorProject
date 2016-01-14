@@ -9,6 +9,9 @@ TagManager:
   - LrgShard
   - leftButton
   - rightButton
+  - Enemy
+  - PlayerBullet
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
