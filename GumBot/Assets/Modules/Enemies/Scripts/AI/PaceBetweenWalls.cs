@@ -1,18 +1,20 @@
 ﻿// Author: Miles Meacham
-// Description: Earth Enemy Script
+// Description: Pace Between Walls and Gaps
 
 using UnityEngine;
 using System.Collections;
 
 // EarthEnemy
-// Script to control the earth enemies
+// Script to make an enemy walk and turn around when they hit a wall or a gap.
 
-public class EarthEnemy : MonoBehaviour {
+public class PaceBetweenWalls : MonoBehaviour {
 
 	private CharacterMotor2 theCharacterMotor;
 
-	// Assign the correct box collider to this in the editor
+	// Assign the correct box colliders to these in the editor
 	public GroundCheck wallCheck;
+	public GroundCheck gapCheck;
+
 
 	public bool turning;
 	public float turnDuration = 1f;
@@ -39,7 +41,7 @@ public class EarthEnemy : MonoBehaviour {
 
 	void Movement ()
 	{
-		if (wallCheck.grounded && !turning) 
+		if (wallCheck.grounded && !turning || !gapCheck.grounded && !turning) 
 		{
 			StartCoroutine ("TurnArroundCo");
 		}
