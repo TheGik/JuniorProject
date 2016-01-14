@@ -30,6 +30,8 @@ GameObject:
   - 114: {fileID: 11465948}
   - 114: {fileID: 11484132}
   - 54: {fileID: 5464680}
+  - 114: {fileID: 11474590}
+  - 114: {fileID: 11439906}
   m_Layer: 0
   m_Name: BasicEnemy
   m_TagString: Untagged
@@ -204,6 +206,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11439906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf9d7cf57f77cc4993bb4661eb61506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  immuneToPlayerDamage: 0
+  immuneToEnemyDamage: 1
+  immuneToHazardDamage: 1
 --- !u!114 &11444302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -268,6 +284,23 @@ MonoBehaviour:
   facingRight: 1
   movingLeft: 0
   movingRight: 0
+--- !u!114 &11474590
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7ccb8c6cc284d42bc4c798344dd0a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  maxHealth: 1
+  minHealth: 0
+  possibleMaxHealth: 10
+  invincible: 0
+  invincibilityTime: 2
 --- !u!114 &11484132
 MonoBehaviour:
   m_ObjectHideFlags: 1
