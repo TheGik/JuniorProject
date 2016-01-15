@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: d46ce698d1bf9d24a8d30307f34560db
 timeCreated: 1452883246
+=======
+guid: a5c30d1435603154a9ec9a3e72a6e0e8
+timeCreated: 1452891995
+>>>>>>> 9c44e35c43c1a1e91bb8746153e7ce0afabe53f4
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -9,6 +14,7 @@ ModelImporter:
     100002: pCylinder2
     100004: pCylinder3
     100006: transform1
+<<<<<<< HEAD
     100008: cloud1
     100010: cloud10
     100012: cloud11
@@ -33,10 +39,13 @@ ModelImporter:
     100050: island3
     100052: IslandMain
     100054: stairs
+=======
+>>>>>>> 9c44e35c43c1a1e91bb8746153e7ce0afabe53f4
     400000: //RootNode
     400002: pCylinder2
     400004: pCylinder3
     400006: transform1
+<<<<<<< HEAD
     400008: cloud1
     400010: cloud10
     400012: cloud11
@@ -138,6 +147,11 @@ ModelImporter:
     4300044: cloud18
     4300046: cloud19
     4300048: cloud20
+=======
+    2300000: pCylinder3
+    3300000: pCylinder3
+    4300000: pCylinder3
+>>>>>>> 9c44e35c43c1a1e91bb8746153e7ce0afabe53f4
     9500000: //RootNode
   materials:
     importMaterials: 1
