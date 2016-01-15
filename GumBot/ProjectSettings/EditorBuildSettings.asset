@@ -7,3 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Modules/Level/Scenes/TestLevel.unity
+  - enabled: 1
+    path: Assets/Modules/GUI/GUI Scenes/DeathScreen.unity
+  - enabled: 1
+    path: Assets/Modules/GUI/GUI Scenes/StartScreen.unity
