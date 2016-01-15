@@ -51,29 +51,11 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -98,11 +80,14 @@
     <Compile Include="Assets\Modules\GUI\GUI Scripts\TouchInputs.cs" />
     <Compile Include="Assets\Modules\GUI\GUI Scripts\buttonLocation.cs" />
     <Compile Include="Assets\Modules\GUI\GUI Scripts\buttonTouch.cs" />
+    <Compile Include="Assets\Modules\GUI\GUI Scripts\interfaceScript.cs" />
     <Compile Include="Assets\Modules\Level\Scripts\Gravity\Attractor.cs" />
     <Compile Include="Assets\Modules\Level\Scripts\Gravity\CharacterGravity.cs" />
     <Compile Include="Assets\Modules\Level\Scripts\Gravity\TransferGravity.cs" />
+    <Compile Include="Assets\Modules\Level\Scripts\Level\MoverScript.cs" />
     <Compile Include="Assets\Modules\Level\Scripts\Level\RotateLeft.cs" />
     <Compile Include="Assets\Modules\Level\Scripts\Level\RotateRight.cs" />
+    <Compile Include="Assets\Modules\Level\Scripts\Level\RotatorScript.cs" />
     <Compile Include="Assets\Modules\Level\Scripts\Level\planetGeneration.cs" />
     <Compile Include="Assets\Modules\Player\Scripts\CharacterAutoCrouch\CharacterAutoCrouch.cs" />
     <Compile Include="Assets\Modules\Player\Scripts\CharacterAutoCrouch\CharacterAutoCrouchBottom.cs" />

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class turret : MonoBehaviour {
+public class enemyShootingHorizontal : MonoBehaviour {
 
     public float targetDistance;
     public float attackDistance;
