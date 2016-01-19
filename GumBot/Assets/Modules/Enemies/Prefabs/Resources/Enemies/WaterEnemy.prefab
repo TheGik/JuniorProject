@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11403718}
   m_Layer: 0
   m_Name: Wall Checker
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,23 @@ GameObject:
   - 114: {fileID: 11470256}
   m_Layer: 0
   m_Name: Gap Checker
-  m_TagString: Untagged
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &159366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 405538}
+  - 65: {fileID: 6555878}
+  m_Layer: 0
+  m_Name: Shot Point
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,7 +62,7 @@ GameObject:
   - 23: {fileID: 2306426}
   m_Layer: 0
   m_Name: WaterEnemyArt
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66,13 +82,28 @@ GameObject:
   - 114: {fileID: 11414142}
   - 114: {fileID: 11429716}
   - 136: {fileID: 13615980}
+  - 114: {fileID: 11429276}
+  - 114: {fileID: 11441098}
+  - 114: {fileID: 11430892}
   m_Layer: 0
   m_Name: WaterEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &405538
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .651000023, y: .352999985, z: 0}
+  m_LocalScale: {x: .262501866, y: .30000177, z: 1}
+  m_Children: []
+  m_Father: {fileID: 423596}
+  m_RootOrder: 3
 --- !u!4 &414620
 Transform:
   m_ObjectHideFlags: 1
@@ -104,12 +135,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 196100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 44.1699982, y: 70.0199966, z: 0}
+  m_LocalPosition: {x: 24.7999992, y: 82.6999969, z: 0}
   m_LocalScale: {x: .827573597, y: .827573597, z: .827573597}
   m_Children:
   - {fileID: 431018}
   - {fileID: 414620}
   - {fileID: 419984}
+  - {fileID: 405538}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &431018
@@ -182,6 +214,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &6555878
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &6590668
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -244,6 +288,23 @@ MonoBehaviour:
   immuneToPlayerDamage: 0
   immuneToEnemyDamage: 1
   immuneToHazardDamage: 1
+--- !u!114 &11429276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3738a9b85d622204d9c6e6ef3f19c927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 193918, guid: 6e93c717813752b42a1f272ae8358cae, type: 2}
+  shootingPoint: {fileID: 405538}
+  damage: 1
+  reloadTime: .5
+  reloading: 0
+  bulletTag: EnemyBullet
 --- !u!114 &11429716
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -256,6 +317,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attractor: {fileID: 0}
+--- !u!114 &11430892
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dc6fc2dc880b6644abf2ed00292590b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetDistance: 0
+  theCharacterMotor: {fileID: 0}
+  frontOrBack: {x: 0, y: 0, z: 0}
+  Target: {fileID: 0}
+--- !u!114 &11441098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d07c62665d8135a4282555c19ef50aae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startShootingDistance: 15
 --- !u!114 &11465860
 MonoBehaviour:
   m_ObjectHideFlags: 1
