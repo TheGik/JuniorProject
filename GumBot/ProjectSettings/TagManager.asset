@@ -9,6 +9,13 @@ TagManager:
   - LrgShard
   - leftButton
   - rightButton
+  - Enemy
+  - PlayerBullet
+  - EnemyBullet
+  - SpeedPU
+  - DamagePU
+  - JumpPU
+  - HealthRest
   layers:
   - Default
   - TransparentFX
