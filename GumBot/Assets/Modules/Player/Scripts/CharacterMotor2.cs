@@ -31,40 +31,13 @@ public class CharacterMotor2 : MonoBehaviour {
 	void FixedUpdate () 
 	{
 		// Keep player at maxSpeed
-		rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
+		//rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
 		
 		// Keep character at '0' in z. We don't want the player to move in the z direction at all
 		if(rb.transform.position.z != 0)
 			rb.transform.position = new Vector3 (rb.transform.position.x, rb.transform.position.y, 0);
 
-		//CharacterMotion
-		if(movingLeft == true)
-		{
-
-			if(facingRight == true)
-			{
-				Flip ();
-				facingRight = false;
-			}
-
-			characterMovement = new Vector3 (speed, 0, 0);
-			rb.MovePosition (rb.position + transform.TransformDirection (characterMovement) * Time.deltaTime);
-			movingRight = false;
-		}
-
-		if(movingRight == true)
-		{
-			if(facingRight == false)
-			{
-				Flip ();
-				facingRight = true;
-			}
-			
-			characterMovement = new Vector3 (speed, 0, 0);
-			rb.MovePosition (rb.position + transform.TransformDirection (characterMovement) * Time.deltaTime);
-			movingLeft = false;
-		}
-	}
+	}// END OF FIXED UPDATE
 	
 	
 	// Purpose: Move the character left or right
@@ -75,13 +48,25 @@ public class CharacterMotor2 : MonoBehaviour {
 	// -----------------------------------------------------------------
 	public void LeftActivation () 
 	{
-		if(movingLeft == false && movingRight == false)
+		if(movingRight == false)
 		{
 			movingLeft = true;
-		}
-		else if (movingLeft == true)
-		{
-			movingLeft = false;
+
+			// Keep player at maxSpeed
+			rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
+		
+			// Keep character at '0' in z. We don't want the player to move in the z direction at all
+			if(rb.transform.position.z != 0)
+				rb.transform.position = new Vector3 (rb.transform.position.x, rb.transform.position.y, 0);
+
+			if(facingRight == true)
+			{
+				Flip ();
+				facingRight = false;
+			}
+
+			characterMovement = new Vector3 (speed, 0, 0);
+			rb.MovePosition (rb.position + transform.TransformDirection (characterMovement) * Time.deltaTime);
 		}
 	}
 	
@@ -93,16 +78,40 @@ public class CharacterMotor2 : MonoBehaviour {
 	// -----------------------------------------------------------------
 	public void RightActivation () 
 	{
-		if(movingRight == false && movingLeft == false)
+		if(movingLeft == false)
 		{
 			movingRight = true;
-		}
-		else if (movingRight == true)
-		{
-			movingRight = false;
+			// Keep player at maxSpeed
+			rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
+		
+			// Keep character at '0' in z. We don't want the player to move in the z direction at all
+			if(rb.transform.position.z != 0)
+				rb.transform.position = new Vector3 (rb.transform.position.x, rb.transform.position.y, 0);
+
+
+			if(facingRight == false)
+			{
+				Flip ();
+				facingRight = true;
+			}
+
+			characterMovement = new Vector3 (speed, 0, 0);
+			rb.MovePosition (rb.position + transform.TransformDirection (characterMovement) * Time.deltaTime);
+
 		}
 	}
 	
+	// Purpose: Move the character up or down (Jump)
+	// Parameters: void
+	// Returns: void
+	// Pre-conditions: 
+	// Post-conditions: 
+	// -----------------------------------------------------------------
+
+	public void stationaryTest ()
+	{
+		rb.AddForce(new Vector3(0, 50, 0));
+	}
 	// Purpose: Move the character up or down (Jump)
 	// Parameters: void
 	// Returns: void
