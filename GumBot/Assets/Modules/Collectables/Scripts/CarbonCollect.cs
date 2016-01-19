@@ -15,7 +15,10 @@ public class CarbonCollect : MonoBehaviour {
 	}
     void OnTriggerEnter (Collider Collider)
     {
-        CarbonCounter.carbontotal++;
-        Destroy(gameObject);
+        if (Collider.gameObject.tag == "Player")
+        {
+            CarbonCounter.carbontotal++;
+            Destroy(gameObject);
+        }
     }
 }
