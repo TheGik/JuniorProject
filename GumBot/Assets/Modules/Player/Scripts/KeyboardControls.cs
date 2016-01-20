@@ -31,13 +31,21 @@ public class KeyboardControls : MonoBehaviour {
         }
         if (Input.GetKeyUp(KeyCode.D))
         {
+<<<<<<< HEAD
+			theCharacterMotor.movingRight = false;
+=======
             theCharacterMotor.movingRight=false;
+>>>>>>> 17c5aff50654103a1a1ac1173ba08dd9b6b8d64c
         }
 
 
         if (Input.GetKeyUp(KeyCode.A))
         {
+<<<<<<< HEAD
+			theCharacterMotor.movingLeft = false;
+=======
             theCharacterMotor.movingLeft=false;
+>>>>>>> 17c5aff50654103a1a1ac1173ba08dd9b6b8d64c
         }
 
 		if(Input.GetKeyDown(KeyCode.F))
