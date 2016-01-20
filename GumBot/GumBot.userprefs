@@ -1,15 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Modules\Enemies\Scripts\AI\EnemyShootAI.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Modules\Player\Scripts\TakeDamage.cs">
     <Files>
-      <File FileName="Assets\Modules\Level\Scripts\SpawnPointEnemy.cs" Line="1" Column="1" />
-      <File FileName="Assets\Modules\Enemies\Scripts\AI\groundTurret.cs" Line="1" Column="1" />
-      <File FileName="Assets\Modules\Enemies\Scripts\AI\TrackPlayer.cs" Line="1" Column="1" />
-      <File FileName="Assets\Modules\Enemies\Scripts\AI\Charge.cs" Line="1" Column="1" />
-      <File FileName="Assets\Modules\Enemies\Scripts\AI\PaceBetweenWalls.cs" Line="1" Column="1" />
-      <File FileName="Assets\Modules\Player\Scripts\CharacterMotor2.cs" Line="1" Column="1" />
-      <File FileName="Assets\Modules\Enemies\Scripts\AI\EnemyShootAI.cs" Line="1" Column="1" />
-      <File FileName="Assets\Modules\Player\Scripts\bulletMovement.cs" Line="29" Column="40" />
+      <File FileName="Assets\Modules\Player\Scripts\TakeDamage.cs" Line="85" Column="69" />
+      <File FileName="Assets\Modules\Level\Scripts\Hazards\PitHazard.cs" Line="6" Column="29" />
+      <File FileName="Assets\Modules\Level\Scripts\Hazards\SpikeHazard.cs" Line="6" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
