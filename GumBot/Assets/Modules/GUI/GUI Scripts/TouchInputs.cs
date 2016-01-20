@@ -13,13 +13,15 @@ public class TouchInputs : MonoBehaviour {
 	private RaycastHit hit;
 
 	private bool isSwiping = false;
-	private bool leftButtonDown = false;
-	private bool rightButtonDown = false;
 
-	private float minSwipeDist = 50.0f;
-	private float maxSwipeTime = 0.5f;
+	private float minSwipeDist = 30.0f;
+	private float maxSwipeTime = 0.25f;
 	private float fingerStartTime = 0.0f;
+	private float fingerHoldDuration = 0.0f;
+	private float moveDuration = 0.4f;
 	private float centerScreen = Screen.width * 0.5f;
+	private float gestureTime;
+	private float gestureDist;
 
 	private Vector2 fingerStartPos = Vector2.zero;
 	
@@ -27,6 +29,7 @@ public class TouchInputs : MonoBehaviour {
 	private CharacterMotor2 characterMotorScript;
 	private CharacterJump2 characterJumpScript;
 	private CharacterShot characterShotScript;
+	
 
 	// Use this for initialization
 	void Start () 
@@ -40,8 +43,6 @@ public class TouchInputs : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-
-
 		//This is for touch controls
 		if(Input.touchCount > 0)
 		{
@@ -57,40 +58,76 @@ public class TouchInputs : MonoBehaviour {
 					switch(touch.phase)
 					{
 
-						//TOUCH BEGIN
+//////////////////////////////////////////////////-------TOUCH BEGIN-------///////////////////////////////////////////////////////////////////
 						case TouchPhase.Began :
+
 						isSwiping = true;
 						fingerStartTime = Time.time;
 						fingerStartPos = touch.position;
-
-
-						if(touch.position.x < centerScreen)
-						{
-							characterMotorScript.LeftActivation ();
-						}
 						
+
+						/*if(touch.position.x < centerScreen)
+						{
+							if(characterMotorScript.facingRight == true)
+							{
+								characterMotorScript.Flip ();
+								characterMotorScript.facingRight = false;
+							}
+							//characterMotorScript.LeftActivation ();
+						}
+					
 						if(touch.position.x > centerScreen)
 						{
-							characterMotorScript.RightActivation ();
-						}
+							if(characterMotorScript.facingRight == false)
+							{
+								characterMotorScript.Flip ();
+								characterMotorScript.facingRight = true;
+							}
+							//characterMotorScript.RightActivation ();
+						}*/
+
 
 
 						break;//End of Began
 
-						//TOUCH END
+
+///////////////////////////////////////////////////-----TOUCH STATIONARY------/////////////////////////////////////////////////////////
+						case TouchPhase.Stationary :
+						case TouchPhase.Moved :
+
+						//fingerStartTime = Time.time;
+						//fingerStartPos = touch.position;
+						fingerHoldDuration += 0.1f;
+					
+						if(touch.position.x < centerScreen && fingerHoldDuration >= moveDuration)
+							{
+								characterMotorScript.LeftActivation ();
+							}
+				
+						if(touch.position.x > centerScreen && fingerHoldDuration >= moveDuration)
+							{
+								characterMotorScript.RightActivation ();
+							}
+					
+					break;// End of Stationary
+
+//////////////////////////////////////////////////------TOUCH END------///////////////////////////////////////////////////////////////////////////////////////
 						case TouchPhase.Ended :
 							
-							float gestureTime = Time.time - fingerStartTime;
-							float gestureDist = (touch.position - fingerStartPos).magnitude;
+					//This is where gestureTime and gesturDist were...
+							gestureTime = Time.time - fingerStartTime;
+							gestureDist = (touch.position - fingerStartPos).magnitude;
 
 							if(touch.position.x < centerScreen)
 								{
 									characterMotorScript.movingLeft = false;
+									fingerHoldDuration = 0.0f;
 								}
 					
 							if(touch.position.x > centerScreen)
 								{
 									characterMotorScript.movingRight = false;
+									fingerHoldDuration = 0.0f;
 								}
 
 							
@@ -139,24 +176,22 @@ public class TouchInputs : MonoBehaviour {
 						}
 
 						
-						if(isSwiping && gestureTime < maxSwipeTime && gestureDist < minSwipeDist)
+						if(isSwiping && gestureTime < maxSwipeTime && gestureDist < minSwipeDist)// Checks the time and distance of the touch - Used for shooting
 					{
 						characterShotScript.shot();
 					}
-						break;
 
-						//TOUCH STAY
-						case TouchPhase.Stationary :
+						break;// End of Ended
 
-							
-						break;
+						
 
-	
-						//TOUCH CANCEL
+//////////////////////////////////////////////////////////------TOUCH CANCEL-------///////////////////////////////////////////////////////////////////////////////
+
 						case TouchPhase.Canceled :
 							isSwiping = false;
 							//recipient.SendMessage("OnTouchExit", hit.point, SendMessageOptions.DontRequireReceiver);
-						break;
+
+						break;// End of Canceled
 					}
 			
 	
@@ -164,6 +199,7 @@ public class TouchInputs : MonoBehaviour {
 			}
 		
 		}// End of Input.touchCount
+
 
 	}//End of Update
 }// End of MonoDevelop
