@@ -55,17 +55,11 @@
      <Compile Include="Assets\Modules\Enemies\Scripts\AI\Charge.cs" />
      <Compile Include="Assets\Modules\Enemies\Scripts\AI\EnemyShootAI.cs" />
      <Compile Include="Assets\Modules\Enemies\Scripts\AI\PaceBetweenWalls.cs" />
-<<<<<<< HEAD
-     <Compile Include="Assets\Modules\Enemies\Scripts\AI\enemyBulletMovement.cs" />
-     <Compile Include="Assets\Modules\Enemies\Scripts\AI\enemyShotMovement.cs" />
-     <Compile Include="Assets\Modules\Enemies\Scripts\AI\groundTurret.cs" />
-=======
      <Compile Include="Assets\Modules\Enemies\Scripts\AI\TrackPlayer.cs" />
      <Compile Include="Assets\Modules\Enemies\Scripts\AI\enemyBulletMovement.cs" />
      <Compile Include="Assets\Modules\Enemies\Scripts\AI\enemyShootingLR.cs" />
      <Compile Include="Assets\Modules\Enemies\Scripts\AI\enemyShotMovement.cs" />
      <Compile Include="Assets\Modules\Enemies\Scripts\AI\singleShotEnemy.cs" />
->>>>>>> 17c5aff50654103a1a1ac1173ba08dd9b6b8d64c
      <Compile Include="Assets\Modules\Enemies\Scripts\AI\turret.cs" />
      <Compile Include="Assets\Modules\GUI\GUI Scripts\TouchInputs.cs" />
      <Compile Include="Assets\Modules\GUI\GUI Scripts\buttonLocation.cs" />
