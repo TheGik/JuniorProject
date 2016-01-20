@@ -45,20 +45,36 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CarbonCollect.cs" />
      <Compile Include="Assets\GroundCheck.cs" />
      <Compile Include="Assets\Modules\Camera\CarbonCounter.cs" />
      <Compile Include="Assets\Modules\Camera\cameraController.cs" />
+     <Compile Include="Assets\Modules\Collectables\Scripts\CarbonCollect.cs" />
+     <Compile Include="Assets\Modules\Collectables\Scripts\IronCollect.cs" />
+     <Compile Include="Assets\Modules\Collectables\Scripts\PUItem.cs" />
+     <Compile Include="Assets\Modules\Collectables\Scripts\SilicaCollect.cs" />
+     <Compile Include="Assets\Modules\Enemies\Scripts\AI\Charge.cs" />
+     <Compile Include="Assets\Modules\Enemies\Scripts\AI\EnemyShootAI.cs" />
      <Compile Include="Assets\Modules\Enemies\Scripts\AI\PaceBetweenWalls.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Modules\Enemies\Scripts\AI\enemyBulletMovement.cs" />
      <Compile Include="Assets\Modules\Enemies\Scripts\AI\enemyShotMovement.cs" />
      <Compile Include="Assets\Modules\Enemies\Scripts\AI\groundTurret.cs" />
+=======
+     <Compile Include="Assets\Modules\Enemies\Scripts\AI\TrackPlayer.cs" />
+     <Compile Include="Assets\Modules\Enemies\Scripts\AI\enemyBulletMovement.cs" />
+     <Compile Include="Assets\Modules\Enemies\Scripts\AI\enemyShootingLR.cs" />
+     <Compile Include="Assets\Modules\Enemies\Scripts\AI\enemyShotMovement.cs" />
+     <Compile Include="Assets\Modules\Enemies\Scripts\AI\singleShotEnemy.cs" />
+>>>>>>> 17c5aff50654103a1a1ac1173ba08dd9b6b8d64c
      <Compile Include="Assets\Modules\Enemies\Scripts\AI\turret.cs" />
      <Compile Include="Assets\Modules\GUI\GUI Scripts\TouchInputs.cs" />
      <Compile Include="Assets\Modules\GUI\GUI Scripts\buttonLocation.cs" />
      <Compile Include="Assets\Modules\GUI\GUI Scripts\buttonTouch.cs" />
      <Compile Include="Assets\Modules\GUI\GUI Scripts\interfaceScript.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Modules\Level\Danica&apos;s Folder\HUD_Button_Fade.cs" />
+=======
+>>>>>>> 17c5aff50654103a1a1ac1173ba08dd9b6b8d64c
      <Compile Include="Assets\Modules\Level\Scripts\Gravity\Attractor.cs" />
      <Compile Include="Assets\Modules\Level\Scripts\Gravity\CharacterGravity.cs" />
      <Compile Include="Assets\Modules\Level\Scripts\Gravity\TransferGravity.cs" />
@@ -67,6 +83,7 @@
      <Compile Include="Assets\Modules\Level\Scripts\Level\RotateRight.cs" />
      <Compile Include="Assets\Modules\Level\Scripts\Level\RotatorScript.cs" />
      <Compile Include="Assets\Modules\Level\Scripts\Level\planetGeneration.cs" />
+     <Compile Include="Assets\Modules\Level\Scripts\SpawnPointEnemy.cs" />
      <Compile Include="Assets\Modules\Player\Scripts\CharacterAutoCrouch\CharacterAutoCrouch.cs" />
      <Compile Include="Assets\Modules\Player\Scripts\CharacterAutoCrouch\CharacterAutoCrouchBottom.cs" />
      <Compile Include="Assets\Modules\Player\Scripts\CharacterAutoCrouch\CharacterAutoCrouchTop.cs" />
@@ -80,6 +97,7 @@
      <Compile Include="Assets\Modules\Player\Scripts\KeyboardControls.cs" />
      <Compile Include="Assets\Modules\Player\Scripts\Movement.cs" />
      <Compile Include="Assets\Modules\Player\Scripts\Player\playerMovement.cs" />
+     <Compile Include="Assets\Modules\Player\Scripts\PowerUp.cs" />
      <Compile Include="Assets\Modules\Player\Scripts\TakeDamage.cs" />
      <Compile Include="Assets\Modules\Player\Scripts\bulletMovement.cs" />
      <Compile Include="Assets\Modules\Player\Scripts\touchControls.cs" />

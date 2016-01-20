@@ -51,29 +51,11 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -86,23 +68,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CarbonCollect.cs" />
     <Compile Include="Assets\GroundCheck.cs" />
     <Compile Include="Assets\Modules\Camera\CarbonCounter.cs" />
     <Compile Include="Assets\Modules\Camera\cameraController.cs" />
+    <Compile Include="Assets\Modules\Collectables\Scripts\CarbonCollect.cs" />
+    <Compile Include="Assets\Modules\Collectables\Scripts\IronCollect.cs" />
+    <Compile Include="Assets\Modules\Collectables\Scripts\PUItem.cs" />
+    <Compile Include="Assets\Modules\Collectables\Scripts\SilicaCollect.cs" />
     <Compile Include="Assets\Modules\Enemies\Scripts\AI\PaceBetweenWalls.cs" />
     <Compile Include="Assets\Modules\Enemies\Scripts\AI\enemyBulletMovement.cs" />
+    <Compile Include="Assets\Modules\Enemies\Scripts\AI\enemyShootingLR.cs" />
     <Compile Include="Assets\Modules\Enemies\Scripts\AI\enemyShotMovement.cs" />
-    <Compile Include="Assets\Modules\Enemies\Scripts\AI\groundTurret.cs" />
+    <Compile Include="Assets\Modules\Enemies\Scripts\AI\singleShotEnemy.cs" />
     <Compile Include="Assets\Modules\Enemies\Scripts\AI\turret.cs" />
     <Compile Include="Assets\Modules\GUI\GUI Scripts\TouchInputs.cs" />
     <Compile Include="Assets\Modules\GUI\GUI Scripts\buttonLocation.cs" />
     <Compile Include="Assets\Modules\GUI\GUI Scripts\buttonTouch.cs" />
+    <Compile Include="Assets\Modules\GUI\GUI Scripts\interfaceScript.cs" />
     <Compile Include="Assets\Modules\Level\Scripts\Gravity\Attractor.cs" />
     <Compile Include="Assets\Modules\Level\Scripts\Gravity\CharacterGravity.cs" />
     <Compile Include="Assets\Modules\Level\Scripts\Gravity\TransferGravity.cs" />
+    <Compile Include="Assets\Modules\Level\Scripts\Level\MoverScript.cs" />
     <Compile Include="Assets\Modules\Level\Scripts\Level\RotateLeft.cs" />
     <Compile Include="Assets\Modules\Level\Scripts\Level\RotateRight.cs" />
+    <Compile Include="Assets\Modules\Level\Scripts\Level\RotatorScript.cs" />
     <Compile Include="Assets\Modules\Level\Scripts\Level\planetGeneration.cs" />
     <Compile Include="Assets\Modules\Player\Scripts\CharacterAutoCrouch\CharacterAutoCrouch.cs" />
     <Compile Include="Assets\Modules\Player\Scripts\CharacterAutoCrouch\CharacterAutoCrouchBottom.cs" />
@@ -117,6 +106,7 @@
     <Compile Include="Assets\Modules\Player\Scripts\KeyboardControls.cs" />
     <Compile Include="Assets\Modules\Player\Scripts\Movement.cs" />
     <Compile Include="Assets\Modules\Player\Scripts\Player\playerMovement.cs" />
+    <Compile Include="Assets\Modules\Player\Scripts\PowerUp.cs" />
     <Compile Include="Assets\Modules\Player\Scripts\TakeDamage.cs" />
     <Compile Include="Assets\Modules\Player\Scripts\bulletMovement.cs" />
     <Compile Include="Assets\Modules\Player\Scripts\touchControls.cs" />
