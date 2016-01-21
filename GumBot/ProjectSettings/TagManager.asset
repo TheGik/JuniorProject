@@ -16,6 +16,8 @@ TagManager:
   - DamagePU
   - JumpPU
   - HealthRest
+  - Spikes
+  - Pit
   layers:
   - Default
   - TransparentFX
