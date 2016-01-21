@@ -69,6 +69,8 @@
      <Compile Include="Assets\Modules\Level\Scripts\Gravity\Attractor.cs" />
      <Compile Include="Assets\Modules\Level\Scripts\Gravity\CharacterGravity.cs" />
      <Compile Include="Assets\Modules\Level\Scripts\Gravity\TransferGravity.cs" />
+     <Compile Include="Assets\Modules\Level\Scripts\Hazards\PitHazard.cs" />
+     <Compile Include="Assets\Modules\Level\Scripts\Hazards\SpikeHazard.cs" />
      <Compile Include="Assets\Modules\Level\Scripts\Level\MoverScript.cs" />
      <Compile Include="Assets\Modules\Level\Scripts\Level\RotateLeft.cs" />
      <Compile Include="Assets\Modules\Level\Scripts\Level\RotateRight.cs" />
