@@ -376,19 +376,19 @@ Prefab:
       objectReference: {fileID: 1568520638}
     - target: {fileID: 22486174, guid: 6d508ba1a6ec37949a508ba7ad19d031, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22456906, guid: 6d508ba1a6ec37949a508ba7ad19d031, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22475124, guid: 6d508ba1a6ec37949a508ba7ad19d031, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22462114, guid: 6d508ba1a6ec37949a508ba7ad19d031, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d508ba1a6ec37949a508ba7ad19d031, type: 2}
