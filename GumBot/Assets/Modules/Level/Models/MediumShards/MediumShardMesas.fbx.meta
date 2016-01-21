@@ -6,10 +6,50 @@ ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
+    100002: mesa1
+    100004: mesa2
+    100006: mesa3
+    100008: mesa4
+    100010: mesa5
+    100012: mesa6
+    100014: mesa7
+    100016: poolBasins
     400000: //RootNode
+    400002: mesa1
+    400004: mesa2
+    400006: mesa3
+    400008: mesa4
+    400010: mesa5
+    400012: mesa6
+    400014: mesa7
+    400016: poolBasins
     2300000: //RootNode
+    2300002: mesa1
+    2300004: mesa2
+    2300006: mesa3
+    2300008: mesa4
+    2300010: mesa5
+    2300012: mesa6
+    2300014: mesa7
+    2300016: poolBasins
     3300000: //RootNode
+    3300002: mesa1
+    3300004: mesa2
+    3300006: mesa3
+    3300008: mesa4
+    3300010: mesa5
+    3300012: mesa6
+    3300014: mesa7
+    3300016: poolBasins
     4300000: polySurface1
+    4300002: mesa2
+    4300004: poolBasins
+    4300006: mesa4
+    4300008: mesa3
+    4300010: mesa1
+    4300012: mesa5
+    4300014: mesa6
+    4300016: mesa7
     9500000: //RootNode
   materials:
     importMaterials: 1
