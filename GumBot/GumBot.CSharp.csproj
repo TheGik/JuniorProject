@@ -51,11 +51,29 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -75,7 +93,10 @@
     <Compile Include="Assets\Modules\Collectables\Scripts\IronCollect.cs" />
     <Compile Include="Assets\Modules\Collectables\Scripts\PUItem.cs" />
     <Compile Include="Assets\Modules\Collectables\Scripts\SilicaCollect.cs" />
+    <Compile Include="Assets\Modules\Enemies\Scripts\AI\Charge.cs" />
+    <Compile Include="Assets\Modules\Enemies\Scripts\AI\EnemyShootAI.cs" />
     <Compile Include="Assets\Modules\Enemies\Scripts\AI\PaceBetweenWalls.cs" />
+    <Compile Include="Assets\Modules\Enemies\Scripts\AI\TrackPlayer.cs" />
     <Compile Include="Assets\Modules\Enemies\Scripts\AI\enemyBulletMovement.cs" />
     <Compile Include="Assets\Modules\Enemies\Scripts\AI\enemyShootingLR.cs" />
     <Compile Include="Assets\Modules\Enemies\Scripts\AI\enemyShotMovement.cs" />
@@ -93,6 +114,7 @@
     <Compile Include="Assets\Modules\Level\Scripts\Level\RotateRight.cs" />
     <Compile Include="Assets\Modules\Level\Scripts\Level\RotatorScript.cs" />
     <Compile Include="Assets\Modules\Level\Scripts\Level\planetGeneration.cs" />
+    <Compile Include="Assets\Modules\Level\Scripts\SpawnPointEnemy.cs" />
     <Compile Include="Assets\Modules\Player\Scripts\CharacterAutoCrouch\CharacterAutoCrouch.cs" />
     <Compile Include="Assets\Modules\Player\Scripts\CharacterAutoCrouch\CharacterAutoCrouchBottom.cs" />
     <Compile Include="Assets\Modules\Player\Scripts\CharacterAutoCrouch\CharacterAutoCrouchTop.cs" />
