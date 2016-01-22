@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &193370
 GameObject:
   m_ObjectHideFlags: 0
@@ -41,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125676}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.07000017, y: 76.8799973, z: 0}
+  m_LocalPosition: {x: -15.0200005, y: 71.0800018, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 443260}
@@ -116,10 +116,10 @@ MonoBehaviour:
   allEnemies:
   - {fileID: 166370, guid: a7c9e95734328a24f86fe9f69c9a8784, type: 2}
   - {fileID: 197548, guid: 261c3e30eb21b714b8f62fc9ba66a9b0, type: 2}
-  - {fileID: 196100, guid: 8855b03eba0ba9c428ffb3ad55bcc0df, type: 2}
+  - {fileID: 143130, guid: 8855b03eba0ba9c428ffb3ad55bcc0df, type: 2}
   basicEnemyChance: 0
-  earthEnemyChance: 10
-  waterEnemyChance: 20
+  earthEnemyChance: 1
+  waterEnemyChance: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

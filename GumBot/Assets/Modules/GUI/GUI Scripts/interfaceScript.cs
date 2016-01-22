@@ -52,7 +52,7 @@ public class interfaceScript : MonoBehaviour {
 	public void StartLevel ()
 	{
 		print ("Start Level");
-		Application.LoadLevel ("TestLevel");
+		Application.LoadLevel ("TestLevelNoGeneration-Miles");
 	}
 
 	public void NewGamePopUp ()

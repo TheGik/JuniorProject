@@ -5,14 +5,12 @@ public class GroundCheck : MonoBehaviour {
 
 	public bool grounded;
 	public Transform groundCheck;
-	public LayerMask whatIsGround;
 
 	private CharacterJump theCharacterJump;
 
 	// Use this for initialization
 	void Start () {
 		groundCheck = gameObject.GetComponent<Transform> ();
-		whatIsGround = LayerMask.GetMask ("Ground");
 		theCharacterJump = GetComponentInParent<CharacterJump> ();
 	}
 	
@@ -25,7 +23,7 @@ public class GroundCheck : MonoBehaviour {
 	void OnTriggerEnter (Collider collider)
 	{
 		// Layer 8 is the ground Layer
-		if (collider.gameObject.layer == 8) 
+		if (collider.gameObject.layer == 8 || collider.gameObject.layer == 12) 
 		{
 			grounded = true;
 //			theCharacterJump.doubleJumped = false;
@@ -35,7 +33,7 @@ public class GroundCheck : MonoBehaviour {
 	void OnTriggerExit (Collider collider)
 		{
 		// Layer 8 is the ground Layer
-		if (collider.gameObject.layer == 8) 
+		if (collider.gameObject.layer == 8 || collider.gameObject.layer == 12) 
 			grounded = false;
 	}
 

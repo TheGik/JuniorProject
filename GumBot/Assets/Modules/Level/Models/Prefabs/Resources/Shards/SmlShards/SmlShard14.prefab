@@ -61,6 +61,7 @@ GameObject:
   - 33: {fileID: 3334978}
   - 23: {fileID: 2329340}
   - 95: {fileID: 9520226}
+  - 64: {fileID: 6464852}
   m_Layer: 8
   m_Name: SmlShard14
   m_TagString: SmlShard
@@ -234,8 +235,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128172}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.3792191, y: 67.7636261, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106709}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: .00999999978, y: .00999999978, z: .00999999978}
   m_Children:
   - {fileID: 448454}
@@ -536,6 +537,18 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 1a18187a274fe9146aa68a87c342c8a6, type: 3}
+--- !u!64 &6464852
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 92750bc16b1d085469643832283d99c0, type: 3}
 --- !u!64 &6467178
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -624,6 +637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ac79c0445a3534b91a0cec6c3114d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
 --- !u!114 &11435158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -635,6 +649,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e21caf002178dd42872475ccd8c6362, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allEnemies:
+  - {fileID: 166370, guid: a7c9e95734328a24f86fe9f69c9a8784, type: 2}
+  - {fileID: 197548, guid: 261c3e30eb21b714b8f62fc9ba66a9b0, type: 2}
+  - {fileID: 143130, guid: 8855b03eba0ba9c428ffb3ad55bcc0df, type: 2}
+  basicEnemyChance: 0
+  earthEnemyChance: 0
+  waterEnemyChance: 0
 --- !u!114 &11441950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -646,6 +667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ac79c0445a3534b91a0cec6c3114d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
 --- !u!114 &11481686
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -657,6 +679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ac79c0445a3534b91a0cec6c3114d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
 --- !u!114 &11493306
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -668,6 +691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ac79c0445a3534b91a0cec6c3114d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
 --- !u!114 &11495600
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -679,6 +703,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e21caf002178dd42872475ccd8c6362, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allEnemies:
+  - {fileID: 166370, guid: a7c9e95734328a24f86fe9f69c9a8784, type: 2}
+  - {fileID: 197548, guid: 261c3e30eb21b714b8f62fc9ba66a9b0, type: 2}
+  - {fileID: 143130, guid: 8855b03eba0ba9c428ffb3ad55bcc0df, type: 2}
+  basicEnemyChance: 0
+  earthEnemyChance: 0
+  waterEnemyChance: 0
 --- !u!212 &21210268
 SpriteRenderer:
   m_ObjectHideFlags: 1

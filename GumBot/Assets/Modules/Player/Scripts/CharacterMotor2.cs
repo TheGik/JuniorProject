@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class CharacterMotor2 : MonoBehaviour {
-
+	
 	// Character Rigidbody
 	public Rigidbody rb;
 	
@@ -11,16 +11,18 @@ public class CharacterMotor2 : MonoBehaviour {
 	public int maxSpeed = 20;
 	public Vector3 characterMovement;
 	public Vector3 velocity;
-	
+
+	public Vector3 knockbackForce = new Vector3(10000, 5000, 0);
+
 	// Jumping variables
 	public int jumpForce = 15;
 	
 	// Change orientatoin variable
 	public bool facingRight = true;
-
+	
 	public bool movingLeft = false;
 	public bool movingRight = false;
-
+	
 	// Use this for initialization
 	void Start () 
 	{
@@ -31,13 +33,40 @@ public class CharacterMotor2 : MonoBehaviour {
 	void FixedUpdate () 
 	{
 		// Keep player at maxSpeed
-		//rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
+		rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
 		
 		// Keep character at '0' in z. We don't want the player to move in the z direction at all
 		if(rb.transform.position.z != 0)
 			rb.transform.position = new Vector3 (rb.transform.position.x, rb.transform.position.y, 0);
-
-	}// END OF FIXED UPDATE
+		
+		//CharacterMotion
+		if(movingLeft == true)
+		{
+			
+			if(facingRight == true)
+			{
+				Flip ();
+				facingRight = false;
+			}
+			
+			characterMovement = new Vector3 (speed, 0, 0);
+			rb.MovePosition (rb.position + transform.TransformDirection (characterMovement) * Time.deltaTime);
+			movingRight = false;
+		}
+		
+		if(movingRight == true)
+		{
+			if(facingRight == false)
+			{
+				Flip ();
+				facingRight = true;
+			}
+			
+			characterMovement = new Vector3 (speed, 0, 0);
+			rb.MovePosition (rb.position + transform.TransformDirection (characterMovement) * Time.deltaTime);
+			movingLeft = false;
+		}
+	}
 	
 	
 	// Purpose: Move the character left or right
@@ -48,25 +77,13 @@ public class CharacterMotor2 : MonoBehaviour {
 	// -----------------------------------------------------------------
 	public void LeftActivation () 
 	{
-		if(movingRight == false)
+		if(movingLeft == false && movingRight == false)
 		{
 			movingLeft = true;
-
-			// Keep player at maxSpeed
-			rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
-		
-			// Keep character at '0' in z. We don't want the player to move in the z direction at all
-			if(rb.transform.position.z != 0)
-				rb.transform.position = new Vector3 (rb.transform.position.x, rb.transform.position.y, 0);
-
-			if(facingRight == true)
-			{
-				Flip ();
-				facingRight = false;
-			}
-
-			characterMovement = new Vector3 (speed, 0, 0);
-			rb.MovePosition (rb.position + transform.TransformDirection (characterMovement) * Time.deltaTime);
+		}
+		else if (movingLeft == true)
+		{
+			movingLeft = false;
 		}
 	}
 	
@@ -78,40 +95,16 @@ public class CharacterMotor2 : MonoBehaviour {
 	// -----------------------------------------------------------------
 	public void RightActivation () 
 	{
-		if(movingLeft == false)
+		if(movingRight == false && movingLeft == false)
 		{
 			movingRight = true;
-			// Keep player at maxSpeed
-			rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
-		
-			// Keep character at '0' in z. We don't want the player to move in the z direction at all
-			if(rb.transform.position.z != 0)
-				rb.transform.position = new Vector3 (rb.transform.position.x, rb.transform.position.y, 0);
-
-
-			if(facingRight == false)
-			{
-				Flip ();
-				facingRight = true;
-			}
-
-			characterMovement = new Vector3 (speed, 0, 0);
-			rb.MovePosition (rb.position + transform.TransformDirection (characterMovement) * Time.deltaTime);
-
+		}
+		else if (movingRight == true)
+		{
+			movingRight = false;
 		}
 	}
 	
-	// Purpose: Move the character up or down (Jump)
-	// Parameters: void
-	// Returns: void
-	// Pre-conditions: 
-	// Post-conditions: 
-	// -----------------------------------------------------------------
-
-	public void stationaryTest ()
-	{
-		rb.AddForce(new Vector3(0, 50, 0));
-	}
 	// Purpose: Move the character up or down (Jump)
 	// Parameters: void
 	// Returns: void
@@ -157,4 +150,5 @@ public class CharacterMotor2 : MonoBehaviour {
 		transform.localScale = theScale;
 		
 	}
+	
 }
