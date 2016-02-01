@@ -64,7 +64,8 @@
      <Compile Include="Assets\GUI\GUI Scripts\buttonLocation.cs" />
      <Compile Include="Assets\GUI\GUI Scripts\buttonTouch.cs" />
      <Compile Include="Assets\GUI\GUI Scripts\interfaceScript.cs" />
-     <Compile Include="Assets\GUI\HUD_Button_Fade.cs" />
+     <Compile Include="Assets\GUI\Scripts\HUD_Button_Fade.cs" />
+     <Compile Include="Assets\GUI\Scripts\UIHealth.cs" />
      <Compile Include="Assets\Level\Scripts\Gravity\Attractor.cs" />
      <Compile Include="Assets\Level\Scripts\Gravity\CharacterGravity.cs" />
      <Compile Include="Assets\Level\Scripts\Gravity\TransferGravity.cs" />

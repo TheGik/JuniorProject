@@ -32,9 +32,12 @@ public class CharacterHealth : MonoBehaviour {
 	public void Update () {
 
 		// Destroy object once his health hits 0
-		if (health == minHealth)
-			destroyObject ();
-
+		if (health == minHealth) {
+			if (tag == "Player")  						//This is all temporary for the playtest1
+				Application.LoadLevel ("DeathScreen");	//We will have to rewrite this soon.
+			else
+				destroyObject ();
+		}
 
 	}
 
