@@ -76,6 +76,7 @@
      <Compile Include="Assets\Level\Scripts\Level\RotateRight.cs" />
      <Compile Include="Assets\Level\Scripts\Level\RotatorScript.cs" />
      <Compile Include="Assets\Level\Scripts\Level\planetGeneration.cs" />
+     <Compile Include="Assets\Level\Scripts\ParallaxingRotate.cs" />
      <Compile Include="Assets\Level\Scripts\SpawnPointEnemy.cs" />
      <Compile Include="Assets\Player\Scripts\CharacterAutoCrouch\CharacterAutoCrouch.cs" />
      <Compile Include="Assets\Player\Scripts\CharacterAutoCrouch\CharacterAutoCrouchBottom.cs" />
