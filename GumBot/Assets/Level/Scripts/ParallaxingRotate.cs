@@ -27,9 +27,9 @@ public class ParallaxingRotate : MonoBehaviour {
 	{
 		for (int i = 0; i < backgrounds.Length; i++) 
 		{
-			Quaternion parallax = (prevCamPos - transform.position) * (parallaxScales[i] / smoothing);
+//			Quaternion parallax = (prevCamPos - transform.position) * (parallaxScales[i] / smoothing);
 			
-			backgrounds[i].position = new Vector3 (backgrounds[i].position.x + parallax.x, backgrounds[i].position.y + parallax.y, backgrounds[i].position.z);
+//			backgrounds[i].position = new Vector3 (backgrounds[i].position.x + parallax.x, backgrounds[i].position.y + parallax.y, backgrounds[i].position.z);
 		}
 		
 		prevCamPos = transform.position;
