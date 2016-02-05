@@ -52,6 +52,7 @@
      <Compile Include="Assets\Collectables\Scripts\PUItem.cs" />
      <Compile Include="Assets\Collectables\Scripts\SilicaCollect.cs" />
      <Compile Include="Assets\Enemies\Scripts\AI\Charge.cs" />
+     <Compile Include="Assets\Enemies\Scripts\AI\EnemyRangedShot.cs" />
      <Compile Include="Assets\Enemies\Scripts\AI\EnemyShootAI.cs" />
      <Compile Include="Assets\Enemies\Scripts\AI\PaceBetweenWalls.cs" />
      <Compile Include="Assets\Enemies\Scripts\AI\TrackPlayer.cs" />
@@ -60,6 +61,7 @@
      <Compile Include="Assets\Enemies\Scripts\AI\enemyShotMovement.cs" />
      <Compile Include="Assets\Enemies\Scripts\AI\singleShotEnemy.cs" />
      <Compile Include="Assets\Enemies\Scripts\AI\turret.cs" />
+     <Compile Include="Assets\Enemies\Scripts\HeadStomp.cs" />
      <Compile Include="Assets\GUI\GUI Scripts\TouchInputs.cs" />
      <Compile Include="Assets\GUI\GUI Scripts\buttonLocation.cs" />
      <Compile Include="Assets\GUI\GUI Scripts\buttonTouch.cs" />
@@ -98,11 +100,17 @@
      <Compile Include="Assets\Player\Scripts\bulletMovement.cs" />
      <Compile Include="Assets\Player\Scripts\touchControls.cs" />
      <Compile Include="Assets\instantiate.cs" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>Z:/Programs/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>Z:/Programs/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>Z:/Programs/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>Z:/Programs/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>Z:/Programs/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
