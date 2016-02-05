@@ -58,8 +58,17 @@ TagManager:
   - name: BackgroundMid
     uniqueID: 2468256161
     locked: 0
+  - name: BackgroundMidClose
+    uniqueID: 23934919
+    locked: 0
   - name: BackgroundClose
     uniqueID: 2614873923
+    locked: 0
+  - name: BackgroundVeryClose
+    uniqueID: 3449555029
+    locked: 0
+  - name: BackgroundUltraClose
+    uniqueID: 581388647
     locked: 0
   - name: Default
     uniqueID: 0
