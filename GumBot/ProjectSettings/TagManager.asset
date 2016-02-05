@@ -18,6 +18,7 @@ TagManager:
   - HealthRest
   - Spikes
   - Pit
+  - IceShot
   layers:
   - Default
   - TransparentFX
