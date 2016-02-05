@@ -30,6 +30,14 @@ public class GroundCheck : MonoBehaviour {
 		}
 		
 	}
+
+	void OnTriggerStay (Collider collider)
+	{
+		// Layer 8 is the ground Layer
+		if (collider.gameObject.layer == 8) 
+			grounded = true;
+	}
+
 	
 
 	void OnTriggerExit (Collider collider)
