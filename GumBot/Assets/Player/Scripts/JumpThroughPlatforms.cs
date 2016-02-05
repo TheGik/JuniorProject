@@ -10,8 +10,8 @@ using System.Collections;
 public class JumpThroughPlatforms : MonoBehaviour {
 
 	// Declaring Variables
-	private int playerLayer = 8;
-	private int platformLayer = 12;
+	private int playerLayer = 9;
+	private int platformLayer = 13;
 	private float playerVelocity;
 	private float newPosition;
 	private float oldPosition;

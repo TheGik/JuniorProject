@@ -15,7 +15,7 @@ GameObject:
   - 54: {fileID: 5420450}
   m_Layer: 0
   m_Name: bullet
-  m_TagString: PlayerBullet
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotVelocity: 20
-  rb: {fileID: 0}
+  rb: {fileID: 5420450}
   theCharacterMotor: {fileID: 0}
   lifeDuration: .5
   Xpos: 0

@@ -92,6 +92,7 @@
     <Compile Include="Assets\Collectables\Scripts\IronCollect.cs" />
     <Compile Include="Assets\Collectables\Scripts\PUItem.cs" />
     <Compile Include="Assets\Collectables\Scripts\SilicaCollect.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Enemies\Scripts\AI\Charge.cs" />
     <Compile Include="Assets\Enemies\Scripts\AI\EnemyShootAI.cs" />
     <Compile Include="Assets\Enemies\Scripts\AI\PaceBetweenWalls.cs" />
@@ -101,11 +102,18 @@
     <Compile Include="Assets\Enemies\Scripts\AI\enemyShotMovement.cs" />
     <Compile Include="Assets\Enemies\Scripts\AI\singleShotEnemy.cs" />
     <Compile Include="Assets\Enemies\Scripts\AI\turret.cs" />
+=======
+>>>>>>> df702e89368d33c07b83f239f859c50e7fe9abfc
     <Compile Include="Assets\GUI\GUI Scripts\TouchInputs.cs" />
     <Compile Include="Assets\GUI\GUI Scripts\buttonLocation.cs" />
     <Compile Include="Assets\GUI\GUI Scripts\buttonTouch.cs" />
     <Compile Include="Assets\GUI\GUI Scripts\interfaceScript.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\GUI\HUD_Button_Fade.cs" />
+=======
+    <Compile Include="Assets\GUI\Scripts\HUD_Button_Fade.cs" />
+    <Compile Include="Assets\GUI\Scripts\UIHealth.cs" />
+>>>>>>> df702e89368d33c07b83f239f859c50e7fe9abfc
     <Compile Include="Assets\Level\Scripts\Gravity\Attractor.cs" />
     <Compile Include="Assets\Level\Scripts\Gravity\CharacterGravity.cs" />
     <Compile Include="Assets\Level\Scripts\Gravity\TransferGravity.cs" />
@@ -117,6 +125,10 @@
     <Compile Include="Assets\Level\Scripts\Level\RotatorScript.cs" />
     <Compile Include="Assets\Level\Scripts\Level\planetGeneration.cs" />
     <Compile Include="Assets\Level\Scripts\SpawnPointEnemy.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Player\Scripts\ButtonControls.cs" />
+>>>>>>> df702e89368d33c07b83f239f859c50e7fe9abfc
     <Compile Include="Assets\Player\Scripts\CharacterAutoCrouch\CharacterAutoCrouch.cs" />
     <Compile Include="Assets\Player\Scripts\CharacterAutoCrouch\CharacterAutoCrouchBottom.cs" />
     <Compile Include="Assets\Player\Scripts\CharacterAutoCrouch\CharacterAutoCrouchTop.cs" />
@@ -132,6 +144,23 @@
     <Compile Include="Assets\Player\Scripts\Movement.cs" />
     <Compile Include="Assets\Player\Scripts\Player\playerMovement.cs" />
     <Compile Include="Assets\Player\Scripts\PowerUp.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Player\Scripts\Scripts\AI\Charge.cs" />
+    <Compile Include="Assets\Player\Scripts\Scripts\AI\EnemyShootAI.cs" />
+    <Compile Include="Assets\Player\Scripts\Scripts\AI\ExplodeTimer.cs" />
+    <Compile Include="Assets\Player\Scripts\Scripts\AI\FireEnemyExplode.cs" />
+    <Compile Include="Assets\Player\Scripts\Scripts\AI\FireEnemyShooting.cs" />
+    <Compile Include="Assets\Player\Scripts\Scripts\AI\IceFreeze.cs" />
+    <Compile Include="Assets\Player\Scripts\Scripts\AI\PaceBetweenWalls.cs" />
+    <Compile Include="Assets\Player\Scripts\Scripts\AI\TrackPlayer.cs" />
+    <Compile Include="Assets\Player\Scripts\Scripts\AI\WaterWave.cs" />
+    <Compile Include="Assets\Player\Scripts\Scripts\AI\enemyBulletMovement.cs" />
+    <Compile Include="Assets\Player\Scripts\Scripts\AI\enemyShootingLR.cs" />
+    <Compile Include="Assets\Player\Scripts\Scripts\AI\enemyShotMovement.cs" />
+    <Compile Include="Assets\Player\Scripts\Scripts\AI\singleShotEnemy.cs" />
+    <Compile Include="Assets\Player\Scripts\Scripts\AI\turret.cs" />
+>>>>>>> df702e89368d33c07b83f239f859c50e7fe9abfc
     <Compile Include="Assets\Player\Scripts\TakeDamage.cs" />
     <Compile Include="Assets\Player\Scripts\TouchInputsTemp.cs" />
     <Compile Include="Assets\Player\Scripts\bulletMovement.cs" />
