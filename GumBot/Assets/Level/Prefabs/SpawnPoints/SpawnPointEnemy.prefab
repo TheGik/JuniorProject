@@ -116,7 +116,7 @@ MonoBehaviour:
   allEnemies:
   - {fileID: 166370, guid: a7c9e95734328a24f86fe9f69c9a8784, type: 2}
   - {fileID: 197548, guid: 261c3e30eb21b714b8f62fc9ba66a9b0, type: 2}
-  - {fileID: 143130, guid: 8855b03eba0ba9c428ffb3ad55bcc0df, type: 2}
+  - {fileID: 133144, guid: 63f5394133320d04f821866b2282b639, type: 2}
   basicEnemyChance: 10
   earthEnemyChance: 10
   waterEnemyChance: 10
@@ -126,7 +126,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: allEnemies.Array.data[2]
+      value: 
+      objectReference: {fileID: 133144, guid: 63f5394133320d04f821866b2282b639, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 125676}
