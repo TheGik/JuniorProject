@@ -53,6 +53,7 @@
      <Compile Include="Assets\Collectables\Scripts\SilicaCollect.cs" />
      <Compile Include="Assets\Enemies\Scripts\AI\EnemyRangedShot.cs" />
      <Compile Include="Assets\Enemies\Scripts\HeadStomp.cs" />
+     <Compile Include="Assets\Enemies\Scripts\enemyAnimation.cs" />
      <Compile Include="Assets\GUI\GUI Scripts\TouchInputs.cs" />
      <Compile Include="Assets\GUI\GUI Scripts\buttonLocation.cs" />
      <Compile Include="Assets\GUI\GUI Scripts\buttonTouch.cs" />
@@ -71,6 +72,7 @@
      <Compile Include="Assets\Level\Scripts\Level\planetGeneration.cs" />
      <Compile Include="Assets\Level\Scripts\ParallaxingRotate.cs" />
      <Compile Include="Assets\Level\Scripts\SpawnPointEnemy.cs" />
+     <Compile Include="Assets\Level\Scripts\environmentAnimation.cs" />
      <Compile Include="Assets\Player\Scripts\ButtonControls.cs" />
      <Compile Include="Assets\Player\Scripts\CharacterAutoCrouch\CharacterAutoCrouch.cs" />
      <Compile Include="Assets\Player\Scripts\CharacterAutoCrouch\CharacterAutoCrouchBottom.cs" />
