@@ -25,6 +25,6 @@ public class IceFreeze : MonoBehaviour {
     IEnumerator freeze() {
         Motor.speed = 0;
         yield return new WaitForSeconds(frozenTime);
-        Motor.speed = 3;
+        Motor.speed = 5;
     }
 }
