@@ -62,6 +62,7 @@
      <Compile Include="Assets\Level\Scripts\Gravity\Attractor.cs" />
      <Compile Include="Assets\Level\Scripts\Gravity\CharacterGravity.cs" />
      <Compile Include="Assets\Level\Scripts\Gravity\TransferGravity.cs" />
+     <Compile Include="Assets\Level\Scripts\Hazards\MasherTrigger.cs" />
      <Compile Include="Assets\Level\Scripts\Hazards\PitHazard.cs" />
      <Compile Include="Assets\Level\Scripts\Hazards\SpikeHazard.cs" />
      <Compile Include="Assets\Level\Scripts\Level\MoverScript.cs" />
