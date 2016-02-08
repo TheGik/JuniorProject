@@ -1,38 +1,27 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Charge : MonoBehaviour {
+public class EnemyCharge : MonoBehaviour {
 
-	public float chargeDistance = 10;
+
 	public bool charging = false;
 	public float chargeUpTime = 1;
 	public int chargeSpeed = 10;
 	private int tempSpeed;
 
-	private Vector3 playerDistanceVector3;
-
-	private TrackPlayer theTrackPlayer;
 	private CharacterMotor2 theCharacterMotor;
 
 	void Start ()
 	{
-		theTrackPlayer = gameObject.GetComponent<TrackPlayer> ();
 		theCharacterMotor = gameObject.GetComponent<CharacterMotor2> ();
 	}
 
-	// Update is called once per frame
-	void Update () 
+	public void Charge()
 	{
-		playerDistanceVector3 = theTrackPlayer.frontOrBack;
-
-		if (!charging) 
-		{
-			if (playerDistanceVector3.x < chargeDistance && playerDistanceVector3.x > 0 && playerDistanceVector3.y < 2.5f && playerDistanceVector3.y > -2f) 
-				StartCoroutine ("ChargeCo");
-		}
+		StartCoroutine ("ChargeCO");
 	}
 
-	IEnumerator ChargeCo()
+	IEnumerator ChargeCO()
 	{
 		charging = true;
 

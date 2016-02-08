@@ -1,16 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Level\Scripts\Hazards\MasherTrigger.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Level\Scripts\ParallaxingRotate.cs">
     <Files>
-      <File FileName="Assets\Level\Scripts\Hazards\MasherTrigger.cs" Line="1" Column="1" />
-      <File FileName="Assets\Enemies\Scripts\AI\FlyingEnemyMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Enemies\Scripts\HeadStomp.cs" Line="1" Column="1" />
-      <File FileName="Assets\Enemies\Scripts\AI\EnemyRangedShot.cs" Line="1" Column="1" />
-      <File FileName="Assets\Player\Scripts\CharacterShot.cs" Line="1" Column="1" />
-      <File FileName="Assets\Player\Scripts\Scripts\AI\TrackPlayer.cs" Line="1" Column="1" />
-      <File FileName="z:\School\2016 Spring\DysonSphere\GumBot\Assets\Player\Scripts\Scripts\AI\Charge.cs" Line="1" Column="1" />
-      <File FileName="Assets\Player\Scripts\Scripts\AI\enemyShootingLR.cs" Line="1" Column="1" />
-      <File FileName="Assets\Player\Scripts\TakeDamage.cs" Line="67" Column="1" />
+      <File FileName="Assets\Level\Scripts\ParallaxingRotate.cs" Line="42" Column="119" />
+      <File FileName="Assets\Player\Scripts\JumpThroughPlatforms.cs" Line="1" Column="1" />
+      <File FileName="Assets\Player\Scripts\CharacterMotor2.cs" Line="1" Column="1" />
+      <File FileName="Assets\Level\Scripts\Level\RotateRight.cs" Line="15" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
