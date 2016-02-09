@@ -19,7 +19,7 @@ public class CharacterAutoCrouch : MonoBehaviour {
 
 	public bool crouching;
 
-	private CharacterMotor theCharacterMotor;
+	private CharacterMotor2 theCharacterMotor;
 	public GroundCheck theGroundCheck;
 	private CharacterAutoCrouchTop theCharacterAutoCrouchTop;
 	private CharacterAutoCrouchBottom theCharacterAutoCrouchBottom;
@@ -27,7 +27,7 @@ public class CharacterAutoCrouch : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		theCharacterMotor = GetComponentInParent<CharacterMotor> ();
+		theCharacterMotor = GetComponentInParent<CharacterMotor2> ();
 		theCharacterAutoCrouchTop = GetComponentInChildren<CharacterAutoCrouchTop> ();
 		theCharacterAutoCrouchBottom = GetComponentInChildren<CharacterAutoCrouchBottom> ();
 	}

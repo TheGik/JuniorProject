@@ -12,6 +12,8 @@ public class planetGeneration : MonoBehaviour {
 	// Select how many rings (Currently it can't be more than 3 because we have not created rings of that size)
 	public int ringAmount = 3;
 
+	public const string PLANET_NAME = "Planet";
+
 	// These variables deal with the rotation and placement of the shards
 	int rotationDegree;
 	int rotationValue = 0;
@@ -115,7 +117,7 @@ public class planetGeneration : MonoBehaviour {
 			// Name the first planet "Planet" and the rest "Moon"
 			// If it is a "Moon", parent it to the "Planet"
 			if(i != 0){
-				GameObject mainPlanet = GameObject.Find ("Core");
+				GameObject mainPlanet = GameObject.Find (PLANET_NAME);
 				
 				planet.name = "Ring" + i;
 				
@@ -125,8 +127,9 @@ public class planetGeneration : MonoBehaviour {
 				// Assign the proper components to the planet
 				planet.AddComponent<Attractor> ();
 
-				// Name this one "Core" *It should only happen once
-				planet.name = "Core";
+				// Name this one according to the PLANET_NAME variable *It should only happen once
+				planet.name = PLANET_NAME;
+
 			}
 
 			// Add left or right rotates to each ring
@@ -151,7 +154,7 @@ public class planetGeneration : MonoBehaviour {
 				obj.AddComponent<MeshCollider> ();
 				
 				// Rename the Shard
-				obj.name = "Shard" + n;
+				// obj.name = "Shard" + n;
 				
 				// Remove Shard from list to not choose duplicates
 				sections.RemoveAt(rand);
