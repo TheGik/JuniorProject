@@ -9,13 +9,14 @@ public class enemyAnimation : MonoBehaviour {
 	Animator anim;
 
 	private CharacterMotor2 theCharacterMotorScript;
-	private Charge theChargeScript;
+	private EnemyCharge theEnemyChargeScript;
 	private EnemyShootAI theEnemyShootAIScript;
 	private enemyShootingLR theEnemyShootingLRScript;
 	private PaceBetweenWalls thePaceBetweenWallsScript;
 	private singleShotEnemy theSingleShotEnemyScript;
 	private turret theTurretScript;
 	private CharacterShot theCharacterShotScript;
+	private EnemyStomp theEnemyStompScript;
 
 
 
@@ -26,7 +27,7 @@ public class enemyAnimation : MonoBehaviour {
 
 		//These will get the Scripts
 		theCharacterMotorScript = gameObject.GetComponent<CharacterMotor2>();
-		theChargeScript = gameObject.GetComponent<Charge>();
+		theEnemyChargeScript = gameObject.GetComponent<EnemyCharge>();
 		theEnemyShootAIScript = gameObject.GetComponent<EnemyShootAI>();
 		theEnemyShootingLRScript = gameObject.GetComponent<enemyShootingLR>();
 		thePaceBetweenWallsScript = gameObject.GetComponent<PaceBetweenWalls>();
@@ -55,7 +56,7 @@ public class enemyAnimation : MonoBehaviour {
 			}
 
 		//Plays animation when enemy is charging
-		if(theChargeScript.charging == true)
+		if(theEnemyChargeScript.charging == true)
 		{
 			anim.SetBool("Charging", true);
 		}
