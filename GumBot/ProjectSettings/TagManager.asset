@@ -22,9 +22,9 @@ TagManager:
   - Player
   - GravityCanon
   - TouchInput
-  - 
-  - 
-  - 
+  - Right
+  - Left
+  - Bullet
   - 
   - 
   - 
