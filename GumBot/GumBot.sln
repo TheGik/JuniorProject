@@ -17,4 +17,64 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+<<<<<<< HEAD
+=======
+																																																																																																																																																								GlobalSection(MonoDevelopProperties) = preSolution
+=======
+																																																																																																																																																																																													GlobalSection(MonoDevelopProperties) = preSolution
+=======
+<<<<<<< HEAD
+=======
+																																																																																																																																													GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> df702e89368d33c07b83f239f859c50e7fe9abfc
+=======
+																																																																																																																																																			GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> d94d26c4acfc5d62d2343adbe7b9b10af71cb34b
+=======
+																																																																																																																																																				GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> 54caa96f459310b669c70cfc474d3c9984aaaff5
+=======
+<<<<<<< HEAD
+																																																																																																																																																								GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> 027b6efed185c74f0bae953d2273c4912284d46c
+>>>>>>> 1a4bd6b1d9e9cc9836dcb24f130c5a4f46ab88d8
+=======
+																																																																																													GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> c006c21d4c72712221e91f422d24c8438861b22a
+=======
+<<<<<<< HEAD
+																																																																																GlobalSection(MonoDevelopProperties) = preSolution
+=======
+													GlobalSection(MonoDevelopProperties) = preSolution
+=======
+																																																																	GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> 17c5aff50654103a1a1ac1173ba08dd9b6b8d64c
+>>>>>>> 6f7cbfae63367783460a958733c7de19c3150aac
+=======
+						GlobalSection(MonoDevelopProperties) = preSolution
+=======
+																																																																	GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> 17c5aff50654103a1a1ac1173ba08dd9b6b8d64c
+>>>>>>> d75dc223e77ecbcf581e8859d796abcf735e7205
+>>>>>>> 4c19a19e1c98918a2a9dd73eeefcee6e32b024a8
+		StartupItem = Assembly-CSharp.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.inheritsSet = null
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+		$0.TextStylePolicy = $3
+		$3.FileWidth = 120
+		$3.TabWidth = 4
+		$3.IndentWidth = 4
+		$3.EolMarker = Unix
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/plain
+		$3.scope = text/plain
+	EndGlobalSection
+
+>>>>>>> 53e40fb28d517c49fc5eaa3848f3794336b82286
 EndGlobal
