@@ -5,12 +5,14 @@ public class CharacterGravity : MonoBehaviour {
 	
 	public Attractor attractor;
 	GameObject startPlanet;
-	
+
+	const string PLANET_NAME = "Planet";
+
 	private Transform myTransform;
 	
 	// Use this for initialization
 	void Start () {
-		startPlanet = GameObject.Find ("Core");
+		startPlanet = GameObject.Find (PLANET_NAME);
 		attractor = startPlanet.GetComponent<Attractor>();
 		GetComponent<Rigidbody> ().constraints = RigidbodyConstraints.FreezeRotation;
 		GetComponent<Rigidbody> ().useGravity = false;

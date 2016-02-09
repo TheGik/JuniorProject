@@ -30,6 +30,7 @@ GameObject:
   - 33: {fileID: 3311560}
   - 23: {fileID: 2350950}
   - 95: {fileID: 9511028}
+  - 64: {fileID: 6472842}
   m_Layer: 8
   m_Name: SmlShard12
   m_TagString: SmlShard
@@ -561,6 +562,18 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 1a18187a274fe9146aa68a87c342c8a6, type: 3}
+--- !u!64 &6472842
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: e481e5fc7c7a03245b4f48b04d692e75, type: 3}
 --- !u!64 &6489128
 MeshCollider:
   m_ObjectHideFlags: 1
