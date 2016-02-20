@@ -1,7 +1,13 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GumBot.CSharp", "GumBot.CSharp.csproj", "{1D96F81E-47C3-393D-DAA5-DE21585D48CD}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{89082332-3F4F-25AA-4C63-02C3A02AD26C}") = "GumBot", "Assembly-CSharp-firstpass.csproj", "{58699FD1-BFDB-2F6B-D5DF-A07D735C3AEF}"
+EndProject
+Project("{89082332-3F4F-25AA-4C63-02C3A02AD26C}") = "GumBot", "Assembly-CSharp.csproj", "{0CB873E0-F695-0855-367A-290F6C5A61D1}"
+EndProject
+Project("{89082332-3F4F-25AA-4C63-02C3A02AD26C}") = "GumBot", "Assembly-CSharp-Editor-firstpass.csproj", "{C6641959-605C-B714-4AB9-7C5BCE2AE55A}"
+EndProject
+Project("{89082332-3F4F-25AA-4C63-02C3A02AD26C}") = "GumBot", "Assembly-CSharp-Editor.csproj", "{79EC6A9C-2C3D-3FD7-5D73-59A6EE52B882}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,16 +15,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1D96F81E-47C3-393D-DAA5-DE21585D48CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D96F81E-47C3-393D-DAA5-DE21585D48CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1D96F81E-47C3-393D-DAA5-DE21585D48CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1D96F81E-47C3-393D-DAA5-DE21585D48CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58699FD1-BFDB-2F6B-D5DF-A07D735C3AEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58699FD1-BFDB-2F6B-D5DF-A07D735C3AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58699FD1-BFDB-2F6B-D5DF-A07D735C3AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58699FD1-BFDB-2F6B-D5DF-A07D735C3AEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CB873E0-F695-0855-367A-290F6C5A61D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CB873E0-F695-0855-367A-290F6C5A61D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CB873E0-F695-0855-367A-290F6C5A61D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CB873E0-F695-0855-367A-290F6C5A61D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6641959-605C-B714-4AB9-7C5BCE2AE55A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6641959-605C-B714-4AB9-7C5BCE2AE55A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6641959-605C-B714-4AB9-7C5BCE2AE55A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6641959-605C-B714-4AB9-7C5BCE2AE55A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79EC6A9C-2C3D-3FD7-5D73-59A6EE52B882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79EC6A9C-2C3D-3FD7-5D73-59A6EE52B882}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79EC6A9C-2C3D-3FD7-5D73-59A6EE52B882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79EC6A9C-2C3D-3FD7-5D73-59A6EE52B882}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-<<<<<<< HEAD
-=======
 																																																																																																																																																								GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																																																																																																																																																																																													GlobalSection(MonoDevelopProperties) = preSolution
@@ -75,6 +91,4 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
-
->>>>>>> 53e40fb28d517c49fc5eaa3848f3794336b82286
 EndGlobal
