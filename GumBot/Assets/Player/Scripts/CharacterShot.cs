@@ -3,8 +3,6 @@
 
 using UnityEngine;
 using System.Collections;
-//temp audio
-using FMODUnity;
 
 // CharacterShot
 // Script will instatiate a bullet at the shootingPoint
@@ -21,10 +19,6 @@ public class CharacterShot : MonoBehaviour {
 	// This should either be EnemyBullet or PlayerBullet. Set it to that in the editor
 	public string bulletTag;
 
-	//temp audio
-	public StudioEventEmitter shotSound;
-
-
     public void shot()
     {
 		if (!reloading) 
@@ -34,8 +28,6 @@ public class CharacterShot : MonoBehaviour {
 			bullet.gameObject.tag = bulletTag;
 			Instantiate (bullet, shootingPoint.position, shootingPoint.rotation);
 			StartCoroutine ("ShotCo");
-			//temp audio
-			shotSound.Play ();
 		}
 
     }
