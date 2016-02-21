@@ -4,6 +4,9 @@
 using UnityEngine;
 using System.Collections;
 
+//temporary audio implementation
+using FMODUnity;
+
 // Character Health
 // Base class for all character health
 
@@ -20,6 +23,9 @@ public class CharacterHealth : MonoBehaviour {
 	// Change this to the desired time
 	// Note* We can implement a pick up that increases the invincibilityTime if we want
 	public float invincibilityTime = 2;
+
+	//temp audio
+	public StudioEventEmitter hurtSound;
 
 	public void Start () {
 
@@ -63,8 +69,11 @@ public class CharacterHealth : MonoBehaviour {
 	public void removeHealth (float healthToRemove)
 	{
 		// Damage the character if he is not invincible
-		if(!invincible)
+		if (!invincible) {
 			health -= healthToRemove;
+			//temp audio
+			hurtSound.Play ();
+		}
 		// If the damage is higher than the remaining life, set life equal to 0
 		if (health < healthToRemove)
 			health = minHealth;
