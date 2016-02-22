@@ -4,6 +4,9 @@
 using UnityEngine;
 using System.Collections;
 
+//temporary audio implementation
+using FMODUnity;
+
 // Character Health
 // Base class for all character health
 
@@ -14,6 +17,9 @@ public class CharacterHealth : MonoBehaviour {
 	public float maxHealth = 5;
 	public float minHealth = 0;
 	public float possibleMaxHealth = 10;
+
+	//temporary audio implementation
+	public StudioEventEmitter hurtSound;
 	
 	public bool invincible;
 
@@ -63,8 +69,11 @@ public class CharacterHealth : MonoBehaviour {
 	public void removeHealth (float healthToRemove)
 	{
 		// Damage the character if he is not invincible
-		if(!invincible)
+		if (!invincible) {
 			health -= healthToRemove;
+			//temporary audio implementation
+			hurtSound.Play ();
+		}
 		// If the damage is higher than the remaining life, set life equal to 0
 		if (health < healthToRemove)
 			health = minHealth;

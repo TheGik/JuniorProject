@@ -657,6 +657,9 @@ GameObject:
   - 114: {fileID: 11462100}
   - 114: {fileID: 11499428}
   - 114: {fileID: 11421476}
+  - 114: {fileID: 11407108}
+  - 114: {fileID: 11405492}
+  - 114: {fileID: 11430028}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -1056,6 +1059,9 @@ GameObject:
   - 114: {fileID: 11412802}
   - 114: {fileID: 11468008}
   - 114: {fileID: 11482330}
+  - 114: {fileID: 11494640}
+  - 114: {fileID: 11488296}
+  - 114: {fileID: 11448486}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2141,6 +2147,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab30c70706de4544a8202b62f95814a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11405492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/dyson/player_Shoot
+  PlayEvent: 0
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Params: []
+--- !u!114 &11407108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/dyson/player_Jump
+  PlayEvent: 0
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Params: []
 --- !u!114 &11412802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2182,6 +2224,25 @@ MonoBehaviour:
   reloadTime: .5
   reloading: 0
   bulletTag: PlayerBullet
+  shotSound: {fileID: 11405492}
+--- !u!114 &11430028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/dyson/player_Hurt_01
+  PlayEvent: 0
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Params: []
 --- !u!114 &11430456
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2257,7 +2318,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theCharacterMotor: {fileID: 0}
   theGroundCheck: {fileID: 0}
+  jumpSound: {fileID: 11407108}
   doubleJumped: 0
+--- !u!114 &11448486
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 199042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11456688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2347,6 +2420,7 @@ MonoBehaviour:
   maxHealth: 5
   minHealth: 0
   possibleMaxHealth: 10
+  hurtSound: {fileID: 11430028}
   invincible: 0
   invincibilityTime: 2
 --- !u!114 &11487536
@@ -2364,6 +2438,42 @@ MonoBehaviour:
   top: 0
   crouching: 0
   theGroundCheck: {fileID: 11430456}
+--- !u!114 &11488296
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 199042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/Music_Main
+  PlayEvent: 1
+  StopEvent: 2
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Params: []
+--- !u!114 &11494640
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 199042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/ambiance_01
+  PlayEvent: 1
+  StopEvent: 2
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Params: []
 --- !u!114 &11499428
 MonoBehaviour:
   m_ObjectHideFlags: 1
