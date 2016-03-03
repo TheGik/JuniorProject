@@ -152,6 +152,7 @@ GameObject:
   - 54: {fileID: 5464680}
   - 114: {fileID: 11474590}
   - 114: {fileID: 11439906}
+  - 114: {fileID: 11496134}
   m_Layer: 12
   m_Name: BasicEnemy
   m_TagString: Enemy
@@ -977,6 +978,7 @@ MonoBehaviour:
   maxHealth: 2
   minHealth: 0
   possibleMaxHealth: 1
+  hurtSound: {fileID: 11496134}
   invincible: 0
   invincibilityTime: 2
 --- !u!114 &11484132
@@ -994,6 +996,24 @@ MonoBehaviour:
   gapCheck: {fileID: 11444302}
   turning: 0
   turnDuration: 0
+--- !u!114 &11496134
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/dyson/enemy_Block_01
+  PlayEvent: 0
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Params: []
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
