@@ -1,5 +1,5 @@
-{967795b2-8fd0-42fc-b2f8-0792b8fdd10e} event:/debug/Silence
 {ce580665-4e99-4516-9ab9-4ad47d93b0f2} event:/ambiance_01
+{967795b2-8fd0-42fc-b2f8-0792b8fdd10e} event:/debug/Silence
 {ba49b30f-f848-4548-bea2-eaab35c59fe3} event:/dyson/enemy_Block_01
 {f5ee9f4e-60ab-4ca2-a777-66b70f5cd998} event:/dyson/New Event
 {b19398f3-6e06-4075-87d2-476bed4e3b84} event:/dyson/player_Footstep
@@ -16,6 +16,6 @@
 {af59ac28-b7da-45ff-916a-747092ea1e65} bus:/Reverb
 {27f48701-9ed3-4580-8434-20df214fda04} bank:/Ambiance
 {0fdd4f54-968d-41f8-9a2e-0a7b6356b754} bank:/Character
+{d21c9057-d776-4fa7-a7cf-57acf1db654a} bank:/Debug
 {5f534204-e1f1-4a78-9dfe-fab755a3635c} bank:/Music
 {c1090468-9b84-42d2-89c2-e5274d61085a} bank:/Master Bank
-{d21c9057-d776-4fa7-a7cf-57acf1db654a} bank:/Debug

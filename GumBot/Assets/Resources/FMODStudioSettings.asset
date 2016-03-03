@@ -42,7 +42,7 @@ MonoBehaviour:
   - Platform: 1
     Value: Desktop
   - Platform: 2
-    Value: Desktop
+    Value: Mobile
   VirtualChannelSettings:
   - Platform: 2
     Value: 128
